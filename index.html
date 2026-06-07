@@ -4,12 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>KASHKAROV RGB ART | Світлочутливий живопис</title>
-    <meta name="description" content="Михайло Кашкаров. Світлочутливий живопис. Авторська RGB-техніка: зображення змінюється залежно від спектра освітлення.">
-    <meta name="author" content="Mykhailo Kashkarov">
-    
-    <!-- Google Fonts: Inter + JetBrains Mono -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
     <style>
         * {
             margin: 0;
@@ -25,12 +20,11 @@
         }
 
         .container {
-            max-width: 1280px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 2rem 1.5rem;
+            padding: 2rem 1rem;
         }
 
-        /* Шапка */
         .header {
             display: flex;
             justify-content: space-between;
@@ -38,60 +32,45 @@
             flex-wrap: wrap;
             gap: 1rem;
             margin-bottom: 2rem;
-            padding-bottom: 1.5rem;
+            padding-bottom: 1rem;
             border-bottom: 2px solid #e2e8f0;
         }
 
         .title-section h1 {
-            font-size: 2rem;
+            font-size: 1.8rem;
             font-weight: 700;
-            letter-spacing: -0.02em;
-            background: linear-gradient(135deg, #1e2b3c, #2c4c6e);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
         }
 
         .title-section p {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             color: #4a6a85;
-            margin-top: 0.25rem;
         }
 
         .sci-button {
             background: #0f172a;
             color: white;
             font-family: 'JetBrains Mono', monospace;
-            font-weight: 500;
-            font-size: 0.85rem;
-            padding: 0.6rem 1.4rem;
+            font-size: 0.8rem;
+            padding: 0.5rem 1.2rem;
             border-radius: 2rem;
             text-decoration: none;
-            transition: 0.2s;
-            border: 1px solid #2d3a4a;
         }
 
-        .sci-button:hover {
-            background: #14b8a6;
-            border-color: #14b8a6;
-            color: #0f172a;
+        /* ГОЛОВНЕ ПРАВИЛО ДЛЯ КАРТИНОК */
+        .art-image {
+            width: 100% !important;
+            max-width: 100% !important;
+            height: auto !important;
+            display: block;
         }
 
-        /* Галерея */
         .art-item {
             background: white;
             border-radius: 1rem;
             overflow: hidden;
             box-shadow: 0 4px 12px rgba(0,0,0,0.08);
             margin-bottom: 2rem;
-        }
-
-        .art-image {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            display: block;
         }
 
         .art-info {
@@ -102,14 +81,13 @@
         .art-title {
             font-weight: 700;
             font-size: 1.2rem;
-            margin-bottom: 0.25rem;
         }
 
         .art-size {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 0.8rem;
+            font-size: 0.75rem;
             color: #5a6e7c;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.5rem;
         }
 
         .light-buttons {
@@ -117,19 +95,16 @@
             justify-content: center;
             gap: 0.5rem;
             flex-wrap: wrap;
-            margin-top: 0.5rem;
         }
 
         .light-btn {
             font-family: 'JetBrains Mono', monospace;
             background: #eef2f6;
             border: none;
-            padding: 0.4rem 1rem;
+            padding: 0.3rem 0.9rem;
             border-radius: 2rem;
-            font-weight: 500;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             cursor: pointer;
-            transition: 0.2s;
         }
 
         .light-btn.active {
@@ -137,23 +112,19 @@
             color: white;
         }
 
-        /* Секції */
         .section {
             background: white;
-            border-radius: 1.5rem;
-            padding: 2rem;
+            border-radius: 1.2rem;
+            padding: 1.5rem;
             margin: 2rem 0;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-            border: 1px solid #eef2f8;
         }
 
         .section h2 {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             font-weight: 600;
-            letter-spacing: -0.02em;
-            margin-bottom: 1rem;
             border-left: 4px solid #14b8a6;
             padding-left: 1rem;
+            margin-bottom: 1rem;
         }
 
         .author-wrapper {
@@ -164,44 +135,31 @@
         }
 
         .author-photo {
-            max-width: 180px;
+            max-width: 140px;
             width: 100%;
-            height: auto;
             border-radius: 1rem;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
         .contacts {
             background: #f1f5f9;
-            padding: 1.5rem;
+            padding: 1.2rem;
             border-radius: 1rem;
             text-align: center;
         }
 
         footer {
             text-align: center;
-            margin-top: 3rem;
-            padding: 1.5rem;
-            font-family: 'JetBrains Mono', monospace;
+            margin-top: 2rem;
             font-size: 0.7rem;
             color: #6c86a3;
-            border-top: 1px solid #e2e8f0;
         }
 
         @media (max-width: 700px) {
             .container {
                 padding: 1rem;
             }
-            .author-wrapper {
-                flex-direction: column;
-                text-align: center;
-            }
             .art-title {
                 font-size: 1rem;
-            }
-            .light-btn {
-                padding: 0.3rem 0.7rem;
-                font-size: 0.65rem;
             }
         }
     </style>
@@ -216,26 +174,20 @@
         <a href="https://astra31415926.github.io/sci-portal/" class="sci-button">⚡ Model SCI</a>
     </div>
 
-    <!-- ГАЛЕРЕЯ (динамічна) -->
     <div id="gallery"></div>
 
-    <!-- ВИСТАВКИ -->
     <div class="section">
         <h2>Виставки та проєкти</h2>
-        <ul style="margin-left: 1.5rem; line-height: 1.7;">
+        <ul style="margin-left: 1.2rem;">
             <li><strong>2000</strong> – Групова виставка, галерея «Напроти», Харків</li>
-            <li><strong>2010</strong> – Проєкт «Особистість у кубі» (світлочутливий живопис, з Олегом Калашником)</li>
-            <li><strong>2012</strong> – Ніч музеїв: «Побратими на планеті», Муніципальна галерея, Харків; Gagarin Fest, GogolFest</li>
-            <li><strong>2013–дотепер</strong> – Постійний учасник LOM International Festival of Contemporary Art</li>
-            <li><strong>2017</strong> – 1 місце «Найоригінальніше використання металобрухту» (кінетична скульптура «Хвиля»)</li>
-            <li><strong>2019</strong> – Фестиваль ленд-арту «Зелена хвиля», Дніпро</li>
-            <li><strong>2022</strong> – Проєкт світлочутливого живопису, виставка «Enfant Terrible»</li>
+            <li><strong>2010</strong> – Проєкт «Особистість у кубі» (світлочутливий живопис)</li>
+            <li><strong>2012</strong> – Ніч музеїв, Gagarin Fest, GogolFest</li>
+            <li><strong>2013–дотепер</strong> – LOM International Festival of Contemporary Art</li>
+            <li><strong>2017</strong> – 1 місце «Найоригінальніше використання металобрухту»</li>
             <li><strong>2023</strong> – Національний музей Тараса Шевченка, Київ</li>
         </ul>
-        <p style="margin-top: 1rem;"><strong>Постійні експозиції:</strong> Ландау-центр (Харків), Художній музей імені Іллі Рєпіна (Чугуїв)</p>
     </div>
 
-    <!-- ПРО АВТОРА (з портретом) -->
     <div class="section">
         <h2>Про автора</h2>
         <div class="author-wrapper">
@@ -243,25 +195,21 @@
             <div>
                 <p><strong>Михайло Кашкаров</strong> працює на перетині мистецтва та дослідження світла. У своїй практиці він перетворює полотно на систему взаємодії кольору, де зображення змінюється залежно від спектрального освітлення.</p>
                 <p>Його авторська RGB-техніка базується на нашаруванні трьох візуальних структур в одному зображенні, що проявляються під впливом червоного, зеленого та синього світла.</p>
-                <p>Випускник Харківського художнього училища (1998) та Харківської академії дизайну і мистецтв (графіка 1999–2001, скульптура 2003–2005).</p>
+                <p>Випускник Харківського художнього училища (1998) та Харківської академії дизайну і мистецтв.</p>
             </div>
         </div>
     </div>
 
-    <!-- КОНТАКТИ -->
     <div class="contacts">
         <p>📞 <strong>+380 63 505 8292</strong><br>
         ✉️ <a href="mailto:bakminsterfuler@gmail.com">bakminsterfuler@gmail.com</a><br>
         🔗 <a href="https://github.com/Astra31415926" target="_blank">GitHub</a> · <a href="https://zenodo.org/records/19633526" target="_blank">Zenodo (SCI White Paper)</a></p>
     </div>
 
-    <footer>
-        © 2026 Mykhailo Kashkarov · RGB Light-Sensitive Painting · SCI Model
-    </footer>
+    <footer>© 2026 Mykhailo Kashkarov · RGB Light-Sensitive Painting · SCI Model</footer>
 </div>
 
 <script>
-    // Дані картин: для кожної роботи – 4 варіанти (white, red, green, blue)
     const artworks = [
         { title: "Анжеліна Джолі", size: "100 × 75 см", white: "angelina-white.jpg", red: "angelina-red.jpg", green: "angelina-green.jpg", blue: "angelina-blue.jpg" },
         { title: "Термінатор", size: "120 × 85 см", white: "terminator-white.jpg", red: "terminator-red.jpg", green: "terminator-green.jpg", blue: "terminator-blue.jpg" },
@@ -276,40 +224,15 @@
     ];
 
     let activeStates = {};
+    artworks.forEach((_, i) => activeStates[i] = 'white');
 
-    // Ініціалізуємо стан для кожної картини (за замовчуванням 'white')
-    artworks.forEach((_, idx) => {
-        activeStates[idx] = 'white';
-    });
-
-    function setLight(artIndex, mode) {
-        activeStates[artIndex] = mode;
-        updateArtImage(artIndex);
-        updateButtonsState(artIndex, mode);
-    }
-
-    function updateArtImage(artIndex) {
-        const art = artworks[artIndex];
-        const mode = activeStates[artIndex];
-        let imgSrc = '';
-        if (mode === 'white') imgSrc = art.white;
-        else if (mode === 'red') imgSrc = art.red;
-        else if (mode === 'green') imgSrc = art.green;
-        else if (mode === 'blue') imgSrc = art.blue;
-        
-        const imgElement = document.getElementById(`art-img-${artIndex}`);
-        if (imgElement) imgElement.src = imgSrc;
-    }
-
-    function updateButtonsState(artIndex, activeMode) {
-        const btns = document.querySelectorAll(`.light-btn-${artIndex}`);
-        btns.forEach(btn => {
-            const mode = btn.getAttribute('data-mode');
-            if (mode === activeMode) {
-                btn.classList.add('active');
-            } else {
-                btn.classList.remove('active');
-            }
+    function setLight(idx, mode) {
+        activeStates[idx] = mode;
+        const img = document.getElementById(`art-img-${idx}`);
+        if (img) img.src = artworks[idx][mode];
+        document.querySelectorAll(`.light-btn-${idx}`).forEach(btn => {
+            if (btn.dataset.mode === mode) btn.classList.add('active');
+            else btn.classList.remove('active');
         });
     }
 
@@ -317,43 +240,30 @@
         const gallery = document.getElementById('gallery');
         if (!gallery) return;
         gallery.innerHTML = '';
-        
-        artworks.forEach((art, idx) => {
-            const artDiv = document.createElement('div');
-            artDiv.className = 'art-item';
-            
-            // початкове зображення (white)
-            const defaultImg = art.white;
-            
-            artDiv.innerHTML = `
-                <img id="art-img-${idx}" class="art-image" src="${defaultImg}" alt="${art.title}" loading="lazy">
+        artworks.forEach((art, i) => {
+            const div = document.createElement('div');
+            div.className = 'art-item';
+            div.innerHTML = `
+                <img id="art-img-${i}" class="art-image" src="${art.white}" alt="${art.title}">
                 <div class="art-info">
                     <div class="art-title">${art.title}</div>
                     <div class="art-size">Полотно, акрил • ${art.size}</div>
                     <div class="light-buttons">
-                        <button class="light-btn light-btn-${idx} active" data-mode="white">💡 Біле світло</button>
-                        <button class="light-btn light-btn-${idx}" data-mode="red">🔴 Червоне</button>
-                        <button class="light-btn light-btn-${idx}" data-mode="green">🟢 Зелене</button>
-                        <button class="light-btn light-btn-${idx}" data-mode="blue">🔵 Синє</button>
+                        <button class="light-btn light-btn-${i} active" data-mode="white">💡 Біле</button>
+                        <button class="light-btn light-btn-${i}" data-mode="red">🔴 Червоне</button>
+                        <button class="light-btn light-btn-${i}" data-mode="green">🟢 Зелене</button>
+                        <button class="light-btn light-btn-${i}" data-mode="blue">🔵 Синє</button>
                     </div>
                 </div>
             `;
-            gallery.appendChild(artDiv);
+            gallery.appendChild(div);
         });
-        
-        // Додаємо обробники подій після створення DOM
-        artworks.forEach((_, idx) => {
-            const btns = document.querySelectorAll(`.light-btn-${idx}`);
-            btns.forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    e.stopPropagation();
-                    const mode = btn.getAttribute('data-mode');
-                    setLight(idx, mode);
-                });
+        artworks.forEach((_, i) => {
+            document.querySelectorAll(`.light-btn-${i}`).forEach(btn => {
+                btn.addEventListener('click', () => setLight(i, btn.dataset.mode));
             });
         });
     }
-
     renderGallery();
 </script>
 </body>
