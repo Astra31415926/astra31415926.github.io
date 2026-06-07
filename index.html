@@ -20,11 +20,10 @@
         }
 
         .container {
-            max-width: 900px;
+            max-width: 700px;  /* Зменшив загальну ширину */
             margin: 0 auto;
         }
 
-        /* Шапка */
         .header {
             display: flex;
             justify-content: space-between;
@@ -37,13 +36,13 @@
         }
 
         .title-section h1 {
-            font-size: 28px;
+            font-size: 26px;
             font-weight: 700;
         }
 
         .title-section p {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 12px;
+            font-size: 11px;
             color: #666;
         }
 
@@ -51,13 +50,12 @@
             background: #0f172a;
             color: white;
             font-family: 'JetBrains Mono', monospace;
-            font-size: 14px;
-            padding: 8px 20px;
+            font-size: 12px;
+            padding: 6px 16px;
             border-radius: 30px;
             text-decoration: none;
         }
 
-        /* Галерея — кожна картинка окремо */
         .art-item {
             background: white;
             border-radius: 16px;
@@ -66,12 +64,20 @@
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
-        /* ГОЛОВНЕ ПРАВИЛО — КАРТИНКА НЕ БІЛЬША ЗА ЕКРАН */
+        /* ЖОРСТКЕ ОБМЕЖЕННЯ КАРТИНКИ */
         .art-image {
             width: 100%;
             max-width: 100%;
             height: auto;
             display: block;
+        }
+
+        /* ДОДАТКОВЕ ОБМЕЖЕННЯ ДЛЯ ВЕЛИКИХ ЕКРАНІВ */
+        @media (min-width: 800px) {
+            .art-image {
+                max-width: 500px;
+                margin: 0 auto;
+            }
         }
 
         .art-info {
@@ -82,20 +88,19 @@
         .art-title {
             font-weight: 700;
             font-size: 18px;
-            margin-bottom: 4px;
         }
 
         .art-size {
             font-family: 'JetBrains Mono', monospace;
-            font-size: 12px;
+            font-size: 11px;
             color: #666;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
 
         .light-buttons {
             display: flex;
             justify-content: center;
-            gap: 8px;
+            gap: 6px;
             flex-wrap: wrap;
         }
 
@@ -103,9 +108,9 @@
             font-family: 'JetBrains Mono', monospace;
             background: #eef2f6;
             border: none;
-            padding: 5px 12px;
+            padding: 4px 10px;
             border-radius: 30px;
-            font-size: 12px;
+            font-size: 11px;
             cursor: pointer;
         }
 
@@ -114,7 +119,6 @@
             color: white;
         }
 
-        /* Інші секції */
         .section {
             background: white;
             border-radius: 20px;
@@ -123,7 +127,7 @@
         }
 
         .section h2 {
-            font-size: 22px;
+            font-size: 20px;
             font-weight: 600;
             border-left: 4px solid #14b8a6;
             padding-left: 12px;
@@ -138,14 +142,13 @@
         }
 
         .author-photo {
-            max-width: 130px;
-            width: 100%;
+            max-width: 110px;
             border-radius: 16px;
         }
 
         .contacts {
             background: #eef2f6;
-            padding: 20px;
+            padding: 18px;
             border-radius: 20px;
             text-align: center;
         }
@@ -153,11 +156,10 @@
         footer {
             text-align: center;
             margin-top: 40px;
-            font-size: 11px;
+            font-size: 10px;
             color: #777;
         }
 
-        /* Для телефонів */
         @media (max-width: 600px) {
             body {
                 padding: 10px;
@@ -184,15 +186,12 @@
         <h2>Виставки та проєкти</h2>
         <ul style="margin-left: 20px;">
             <li><strong>2000</strong> – Групова виставка, галерея «Напроти», Харків</li>
-            <li><strong>2010</strong> – Проєкт «Особистість у кубі» (світлочутливий живопис, з Олегом Калашником)</li>
+            <li><strong>2010</strong> – Проєкт «Особистість у кубі» (світлочутливий живопис)</li>
             <li><strong>2012</strong> – Ніч музеїв, Gagarin Fest, GogolFest</li>
-            <li><strong>2013–дотепер</strong> – Постійний учасник LOM International Festival of Contemporary Art</li>
-            <li><strong>2017</strong> – 1 місце «Найоригінальніше використання металобрухту» (скульптура «Хвиля»)</li>
-            <li><strong>2019</strong> – Фестиваль ленд-арту «Зелена хвиля», Дніпро</li>
-            <li><strong>2022</strong> – Проєкт світлочутливого живопису, виставка «Enfant Terrible»</li>
+            <li><strong>2013–дотепер</strong> – LOM International Festival of Contemporary Art</li>
+            <li><strong>2017</strong> – 1 місце «Найоригінальніше використання металобрухту»</li>
             <li><strong>2023</strong> – Національний музей Тараса Шевченка, Київ</li>
         </ul>
-        <p style="margin-top: 12px;"><strong>Постійні експозиції:</strong> Ландау-центр (Харків), Художній музей імені Іллі Рєпіна (Чугуїв)</p>
     </div>
 
     <div class="section">
@@ -200,9 +199,9 @@
         <div class="author-wrapper">
             <img src="author-new.jpg" alt="Mykhailo Kashkarov" class="author-photo" onerror="this.style.display='none'">
             <div>
-                <p><strong>Михайло Кашкаров</strong> працює на перетині мистецтва та дослідження світла. У своїй практиці він перетворює полотно на систему взаємодії кольору, де зображення змінюється залежно від спектрального освітлення.</p>
-                <p>Його авторська RGB-техніка базується на нашаруванні трьох візуальних структур в одному зображенні, що проявляються під впливом червоного, зеленого та синього світла.</p>
-                <p>Випускник Харківського художнього училища (1998) та Харківської академії дизайну і мистецтв (графіка 1999–2001, скульптура 2003–2005).</p>
+                <p><strong>Михайло Кашкаров</strong> працює на перетині мистецтва та дослідження світла.</p>
+                <p>Авторська RGB-техніка: нашарування трьох візуальних структур в одному зображенні, що проявляються під червоним, зеленим та синім світлом.</p>
+                <p>Випускник Харківського художнього училища (1998) та ХДАДМ (1999–2005).</p>
             </div>
         </div>
     </div>
@@ -217,7 +216,6 @@
 </div>
 
 <script>
-    // Дані картин
     const artworks = [
         { title: "Анжеліна Джолі", size: "100 × 75 см", white: "angelina-white.jpg", red: "angelina-red.jpg", green: "angelina-green.jpg", blue: "angelina-blue.jpg" },
         { title: "Термінатор", size: "120 × 85 см", white: "terminator-white.jpg", red: "terminator-red.jpg", green: "terminator-green.jpg", blue: "terminator-blue.jpg" },
