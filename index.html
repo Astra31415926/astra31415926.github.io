@@ -59,7 +59,6 @@
             margin-top: 0.25rem;
         }
 
-        /* Кнопка SCI */
         .sci-button {
             background: #0f172a;
             color: white;
@@ -71,7 +70,6 @@
             text-decoration: none;
             transition: 0.2s;
             border: 1px solid #2d3a4a;
-            letter-spacing: -0.2px;
         }
 
         .sci-button:hover {
@@ -80,78 +78,62 @@
             color: #0f172a;
         }
 
-        /* Навігація світла */
-        .light-nav {
+        /* Галерея (стара версія з кнопками під кожною картиною) */
+        .art-item {
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+
+        .art-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .art-info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .art-title {
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .art-size {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.8rem;
+            color: #5a6e7c;
+            margin-bottom: 0.75rem;
+        }
+
+        .light-buttons {
             display: flex;
             justify-content: center;
-            gap: 1rem;
-            margin: 2rem 0;
+            gap: 0.5rem;
             flex-wrap: wrap;
+            margin-top: 0.5rem;
         }
 
         .light-btn {
             font-family: 'JetBrains Mono', monospace;
             background: #eef2f6;
             border: none;
-            padding: 0.6rem 1.5rem;
-            border-radius: 3rem;
-            font-weight: 600;
-            font-size: 0.9rem;
+            padding: 0.4rem 1rem;
+            border-radius: 2rem;
+            font-weight: 500;
+            font-size: 0.75rem;
             cursor: pointer;
             transition: 0.2s;
-            color: #1e2b3c;
         }
 
         .light-btn.active {
             background: #1e2b3c;
             color: white;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        /* Галерея */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .art-card {
-            background: white;
-            border-radius: 1.5rem;
-            overflow: hidden;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-            transition: transform 0.2s;
-        }
-
-        .art-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .art-image {
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            object-fit: cover;
-            display: block;
-        }
-
-        .art-caption {
-            padding: 1rem;
-            text-align: center;
-            font-weight: 500;
-            border-top: 1px solid #edf2f7;
-        }
-
-        .art-title {
-            font-weight: 700;
-            font-size: 1.1rem;
-        }
-
-        .art-details {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.75rem;
-            color: #5a6e7c;
-            margin-top: 0.25rem;
         }
 
         /* Секції */
@@ -165,7 +147,7 @@
         }
 
         .section h2 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             font-weight: 600;
             letter-spacing: -0.02em;
             margin-bottom: 1rem;
@@ -173,13 +155,19 @@
             padding-left: 1rem;
         }
 
-        .section h3 {
-            font-size: 1.2rem;
-            font-weight: 600;
-            margin: 1rem 0 0.5rem;
+        .author-wrapper {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            align-items: center;
         }
 
-        /* Контакти */
+        .author-photo {
+            max-width: 180px;
+            border-radius: 1rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
         .contacts {
             background: #f1f5f9;
             padding: 1.5rem;
@@ -201,19 +189,15 @@
             .container {
                 padding: 1rem;
             }
-            .gallery {
-                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-                gap: 1rem;
-            }
-            .section {
-                padding: 1.2rem;
+            .author-wrapper {
+                flex-direction: column;
+                text-align: center;
             }
         }
     </style>
 </head>
 <body>
 <div class="container">
-    <!-- Шапка з кнопкою SCI -->
     <div class="header">
         <div class="title-section">
             <h1>KASHKAROV RGB ART</h1>
@@ -222,18 +206,10 @@
         <a href="https://astra31415926.github.io/sci-portal/" class="sci-button">⚡ Model SCI</a>
     </div>
 
-    <!-- Навігація освітлення (інтерактив) -->
-    <div class="light-nav">
-        <button class="light-btn active" data-mode="white">💡 Біле світло</button>
-        <button class="light-btn" data-mode="red">🔴 Червоне світло</button>
-        <button class="light-btn" data-mode="green">🟢 Зелене світло</button>
-        <button class="light-btn" data-mode="blue">🔵 Синє світло</button>
-    </div>
+    <!-- ГАЛЕРЕЯ (динамічна) -->
+    <div id="gallery"></div>
 
-    <!-- ІНТЕРАКТИВНА ГАЛЕРЕЯ -->
-    <div class="gallery" id="gallery"></div>
-
-    <!-- ВИСТАВКИ ТА ПРОЄКТИ -->
+    <!-- ВИСТАВКИ -->
     <div class="section">
         <h2>Виставки та проєкти</h2>
         <ul style="margin-left: 1.5rem; line-height: 1.7;">
@@ -249,12 +225,17 @@
         <p style="margin-top: 1rem;"><strong>Постійні експозиції:</strong> Ландау-центр (Харків), Художній музей імені Іллі Рєпіна (Чугуїв)</p>
     </div>
 
-    <!-- ПРО АВТОРА (перенесено в кінець) -->
+    <!-- ПРО АВТОРА (з портретом) -->
     <div class="section">
         <h2>Про автора</h2>
-        <p><strong>Михайло Кашкаров</strong> працює на перетині мистецтва та дослідження світла. У своїй практиці він перетворює полотно на систему взаємодії кольору, де зображення змінюється залежно від спектрального освітлення.</p>
-        <p>Його авторська RGB-техніка базується на нашаруванні трьох візуальних структур в одному зображенні, що проявляються під впливом червоного, зеленого та синього світла.</p>
-        <p>Випускник Харківського художнього училища (1998) та Харківської академії дизайну і мистецтв (графіка 1999–2001, скульптура 2003–2005).</p>
+        <div class="author-wrapper">
+            <img src="author-new.jpg" alt="Mykhailo Kashkarov" class="author-photo" onerror="this.style.display='none'">
+            <div>
+                <p><strong>Михайло Кашкаров</strong> працює на перетині мистецтва та дослідження світла. У своїй практиці він перетворює полотно на систему взаємодії кольору, де зображення змінюється залежно від спектрального освітлення.</p>
+                <p>Його авторська RGB-техніка базується на нашаруванні трьох візуальних структур в одному зображенні, що проявляються під впливом червоного, зеленого та синього світла.</p>
+                <p>Випускник Харківського художнього училища (1998) та Харківської академії дизайну і мистецтв (графіка 1999–2001, скульптура 2003–2005).</p>
+            </div>
+        </div>
     </div>
 
     <!-- КОНТАКТИ -->
@@ -284,57 +265,85 @@
         { title: "Жадан", size: "60 × 60 см", white: "zhadan-white.jpg", red: "zhadan-red.jpg", green: "zhadan-green.jpg", blue: "zhadan-blue.jpg" }
     ];
 
-    let currentMode = "white"; // white, red, green, blue
+    let activeStates = {};
 
-    function renderGallery() {
-        const gallery = document.getElementById("gallery");
-        if (!gallery) return;
-        gallery.innerHTML = "";
-        artworks.forEach(art => {
-            let imgSrc = "";
-            if (currentMode === "white") imgSrc = art.white;
-            else if (currentMode === "red") imgSrc = art.red;
-            else if (currentMode === "green") imgSrc = art.green;
-            else if (currentMode === "blue") imgSrc = art.blue;
-            
-            const card = document.createElement("div");
-            card.className = "art-card";
-            card.innerHTML = `
-                <img class="art-image" src="${imgSrc}" alt="${art.title}" loading="lazy">
-                <div class="art-caption">
-                    <div class="art-title">${art.title}</div>
-                    <div class="art-details">Полотно, акрил • ${art.size}</div>
-                </div>
-            `;
-            gallery.appendChild(card);
-        });
+    // Ініціалізуємо стан для кожної картини (за замовчуванням 'white')
+    artworks.forEach((_, idx) => {
+        activeStates[idx] = 'white';
+    });
+
+    function setLight(artIndex, mode) {
+        activeStates[artIndex] = mode;
+        updateArtImage(artIndex);
+        updateButtonsState(artIndex, mode);
     }
 
-    function setActiveButton(mode) {
-        document.querySelectorAll(".light-btn").forEach(btn => {
-            if (btn.getAttribute("data-mode") === mode) {
-                btn.classList.add("active");
+    function updateArtImage(artIndex) {
+        const art = artworks[artIndex];
+        const mode = activeStates[artIndex];
+        let imgSrc = '';
+        if (mode === 'white') imgSrc = art.white;
+        else if (mode === 'red') imgSrc = art.red;
+        else if (mode === 'green') imgSrc = art.green;
+        else if (mode === 'blue') imgSrc = art.blue;
+        
+        const imgElement = document.getElementById(`art-img-${artIndex}`);
+        if (imgElement) imgElement.src = imgSrc;
+    }
+
+    function updateButtonsState(artIndex, activeMode) {
+        const btns = document.querySelectorAll(`.light-btn-${artIndex}`);
+        btns.forEach(btn => {
+            const mode = btn.getAttribute('data-mode');
+            if (mode === activeMode) {
+                btn.classList.add('active');
             } else {
-                btn.classList.remove("active");
+                btn.classList.remove('active');
             }
         });
     }
 
-    function changeLightMode(mode) {
-        currentMode = mode;
-        renderGallery();
-        setActiveButton(mode);
+    function renderGallery() {
+        const gallery = document.getElementById('gallery');
+        if (!gallery) return;
+        gallery.innerHTML = '';
+        
+        artworks.forEach((art, idx) => {
+            const artDiv = document.createElement('div');
+            artDiv.className = 'art-item';
+            
+            // початкове зображення (white)
+            const defaultImg = art.white;
+            
+            artDiv.innerHTML = `
+                <img id="art-img-${idx}" class="art-image" src="${defaultImg}" alt="${art.title}" loading="lazy">
+                <div class="art-info">
+                    <div class="art-title">${art.title}</div>
+                    <div class="art-size">Полотно, акрил • ${art.size}</div>
+                    <div class="light-buttons">
+                        <button class="light-btn light-btn-${idx} active" data-mode="white">💡 Біле світло</button>
+                        <button class="light-btn light-btn-${idx}" data-mode="red">🔴 Червоне</button>
+                        <button class="light-btn light-btn-${idx}" data-mode="green">🟢 Зелене</button>
+                        <button class="light-btn light-btn-${idx}" data-mode="blue">🔵 Синє</button>
+                    </div>
+                </div>
+            `;
+            gallery.appendChild(artDiv);
+        });
+        
+        // Додаємо обробники подій після створення DOM
+        artworks.forEach((_, idx) => {
+            const btns = document.querySelectorAll(`.light-btn-${idx}`);
+            btns.forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const mode = btn.getAttribute('data-mode');
+                    setLight(idx, mode);
+                });
+            });
+        });
     }
 
-    // Події для кнопок
-    document.querySelectorAll(".light-btn").forEach(btn => {
-        btn.addEventListener("click", () => {
-            const mode = btn.getAttribute("data-mode");
-            if (mode) changeLightMode(mode);
-        });
-    });
-
-    // Ініціалізація
     renderGallery();
 </script>
 </body>
