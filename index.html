@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Михайло Кашкаров — RGB Art &amp; SCI Model | Mykhailo Kashkarov</title>
-<meta name="description" content="Михайло Кашкаров — сайнс-арт художник з Харкова. Автор техніки світлочутливого RGB-живопису та наукової моделі SCI (Spectral Channel Integrity). Виставки, нагороди, NFT, роботи.">
+<meta name="description" content="Михайло Кашкаров — сайнс-арт художник з Харкова. Автор техніки світлочутливого RGB-живопису та теоретичної моделі SCI (Spectral Channel Integrity). Виставки, NFT, роботи.">
 <meta name="keywords" content="Михайло Кашкаров, Mykhailo Kashkarov, science art, RGB живопис, SCI Model, світлочутливий живопис, Spectral Channel Integrity, NFT art, Kharkiv artist, український художник">
 <meta name="author" content="Mykhailo Kashkarov">
 <link rel="canonical" href="https://astra31415926.github.io/">
@@ -13,7 +13,7 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Михайло Кашкаров — RGB Art & SCI Model">
-<meta property="og:description" content="Сайнс-арт художник: світлочутливий RGB-живопис, наукова модель SCI, NFT, виставки та нагороди.">
+<meta property="og:description" content="Сайнс-арт художник: світлочутливий RGB-живопис, теоретична модель SCI, NFT, виставки.">
 <meta property="og:image" content="https://astra31415926.github.io/author-new.jpg">
 <meta property="og:url" content="https://astra31415926.github.io/">
 <meta property="og:locale" content="uk_UA">
@@ -22,7 +22,7 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Mykhailo Kashkarov — RGB Art & SCI Model">
-<meta name="twitter:description" content="Science-art artist: light-sensitive RGB painting, the SCI spectral model, NFT art, exhibitions & awards.">
+<meta name="twitter:description" content="Science-art artist: light-sensitive RGB painting, the SCI theoretical model, NFT art, exhibitions.">
 <meta name="twitter:image" content="https://astra31415926.github.io/author-new.jpg">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f172a'/%3E%3Ccircle cx='12' cy='13' r='6' fill='%23ff3b3b' opacity='0.85'/%3E%3Ccircle cx='20' cy='13' r='6' fill='%2322d37a' opacity='0.85'/%3E%3Ccircle cx='16' cy='20' r='6' fill='%233b82f6' opacity='0.85'/%3E%3C/svg%3E">
@@ -167,7 +167,7 @@
   .gallery{display:grid;grid-template-columns:1fr;gap:28px}
   @media (min-width:700px){ .gallery{grid-template-columns:1fr 1fr} }
   .art-item{background:var(--card);border-radius:20px;overflow:hidden;border:1px solid var(--line)}
-  .art-image{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+  .art-image{width:100%;height:auto;max-height:70vh;object-fit:contain;background:#eef1f5}
   .art-info{padding:18px 20px}
   .art-title{font-weight:700;font-size:19px;margin-bottom:4px}
   .art-size{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted);margin-bottom:14px}
@@ -186,13 +186,6 @@
   .t-year{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--teal)}
   .t-desc{color:#2a3b4d;font-size:15px}
   .permanent-note{margin-top:20px;padding:16px 20px;background:#eef2f6;border-radius:14px;font-size:14px;color:var(--muted)}
-
-  .awards-grid{display:grid;gap:18px}
-  @media (min-width:700px){ .awards-grid{grid-template-columns:1fr 1fr 1fr} }
-  .award-card{padding:24px;text-align:center}
-  .award-medal{font-size:30px;margin-bottom:10px}
-  .award-card h4{font-size:15px;font-weight:700;margin-bottom:6px}
-  .award-card p{font-size:13px;color:var(--muted)}
 
   /* CONTACTS */
   .contacts{background:var(--ink);color:#fff}
@@ -218,7 +211,6 @@
       <a href="#sci" class="uk">SCI Model</a><a href="#sci" class="en">SCI Model</a>
       <a href="#works" class="uk">Роботи</a><a href="#works" class="en">Works</a>
       <a href="#exhibitions" class="uk">Виставки</a><a href="#exhibitions" class="en">Exhibitions</a>
-      <a href="#awards" class="uk">Нагороди</a><a href="#awards" class="en">Awards</a>
       <a href="#contacts" class="uk">Контакти</a><a href="#contacts" class="en">Contacts</a>
     </div>
     <div class="nav-right">
@@ -234,7 +226,6 @@
     <a href="#sci" class="uk">SCI Model</a><a href="#sci" class="en">SCI Model</a>
     <a href="#works" class="uk">Роботи</a><a href="#works" class="en">Works</a>
     <a href="#exhibitions" class="uk">Виставки</a><a href="#exhibitions" class="en">Exhibitions</a>
-    <a href="#awards" class="uk">Нагороди</a><a href="#awards" class="en">Awards</a>
     <a href="#contacts" class="uk">Контакти</a><a href="#contacts" class="en">Contacts</a>
   </div>
 </nav>
@@ -248,8 +239,8 @@
       <div class="hero-eyebrow"><span class="rgb-dots"><span></span><span></span><span></span></span> <span class="uk">Сайнс-арт художник · Харків</span><span class="en">Science-Art Artist · Kharkiv</span></div>
       <h1 class="uk">Михайло Кашкаров</h1>
       <h1 class="en">Mykhailo Kashkarov</h1>
-      <p class="lead uk">Художник і винахідник, що працює на перетині живопису та дослідження світла. Автор техніки світлочутливого RGB-живопису та наукової моделі SCI (Spectral Channel Integrity).</p>
-      <p class="lead en">Artist and inventor working at the intersection of painting and light research. Creator of the light-sensitive RGB painting technique and the SCI (Spectral Channel Integrity) scientific model.</p>
+      <p class="lead uk">Художник і винахідник, що працює на перетині живопису та дослідження світла. Автор техніки світлочутливого RGB-живопису та теоретичної моделі SCI (Spectral Channel Integrity).</p>
+      <p class="lead en">Artist and inventor working at the intersection of painting and light research. Creator of the light-sensitive RGB painting technique and the SCI (Spectral Channel Integrity) theoretical model.</p>
       <div class="hero-cta">
         <a href="#works" class="btn btn-primary uk">Переглянути роботи</a>
         <a href="#works" class="btn btn-primary en">View Works</a>
@@ -270,8 +261,9 @@
       <div class="about-photo"><img src="author-new.jpg" alt="Mykhailo Kashkarov portrait"></div>
       <div class="about-text">
         <div class="uk">
-          <p><strong>Михайло Кашкаров</strong> (нар. 1976, Харків) — багатопрофільний художник і винахідник, що працює на перетині живопису, скульптури та графіки. Автор запатентованої кінетичної конструкції «Каскад» та власної техніки світлочутливого RGB-живопису, у якій зображення трансформується залежно від спектра освітлення: три різні візуальні структури нашаровані в одному полотні й проявляються під впливом червоного, зеленого чи синього світла.</p>
-          <p>З 2013 року — постійний учасник Міжнародного фестивалю сучасного мистецтва «ЛОМ» (Єкатеринбург), де двічі ставав лауреатом. Брав участь у реставрації розписів Свято-Троїцької церкви в Харкові, оформленні Харківського зоопарку, парку Горького та аквапарків у кількох містах, а також фестивалю льодових скульптур у Москві.</p>
+          <p><strong>Михайло Кашкаров</strong> (нар. 1976, Харків) — художник і винахідник, що працює на межі оптики, живопису та науки. Автор унікальної техніки світлочутливого RGB-живопису: в одному полотні нашаровано три незалежні візуальні структури, кожна з яких проявляється лише під впливом певного спектра світла — червоного, зеленого або синього. Це перетворює картину зі статичного об'єкта на динамічний, що змінюється разом зі світлом і залучає глядача до прямої взаємодії.</p>
+          <p>В основі техніки — авторська теоретична модель SCI (Spectral Channel Integrity), що описує принцип ізоляції та нормалізації трьох пігментних каналів; дослідження опубліковане в репозиторії Zenodo (2026).</p>
+          <p>Михайло також є автором і патентовласником кінетичної конструкції «Каскад». Роботи представлені в Національному художньому музеї України (Київ), Ландау-центрі та Художньо-меморіальному музеї ім. І. Рєпіна (Чугуїв).</p>
           <div class="quote">
             «Михайло захоплений проблемами екології планети. Любить усе живе, багато і з задоволенням експериментує. У своїй творчості гармонійно поєднує колір, абстрактні форми, лінії, перетини, відображаючи швидкоплинність часу, красу і гармонію зовнішнього світу.»
             <cite>— А. Гончарова, галерист</cite>
@@ -285,12 +277,13 @@
             </ul>
           </div>
           <div class="war-note">
-            З 2022 року Михайло створює колекції NFT-мистецтва. Ці роботи народилися в перші дні повномасштабного вторгнення росії в Україну — серед тривоги, безсоння і сплутаних думок; проєкт став способом впоратися з реальністю, а створені образи відображають емоційний стан того часу. Частина коштів від продажу цих робіт спрямовується на допомогу постраждалим від війни та потреби Збройних сил України. Колекція — на <a href="https://opensea.io/MihailKashkarov" target="_blank" rel="noopener" style="text-decoration:underline">OpenSea</a>.
+            З 2022 року Михайло створює колекції NFT-мистецтва. Ці роботи народилися в перші дні повномасштабного вторгнення росії в Україну — серед тривоги, безсоння і сплутаних думок. Проєкт став способом впоратися з реальністю, а створені образи відображають емоційний стан того часу. Колекція — на <a href="https://opensea.io/MihailKashkarov" target="_blank" rel="noopener" style="text-decoration:underline">OpenSea</a>.
           </div>
         </div>
         <div class="en">
-          <p><strong>Mykhailo Kashkarov</strong> (b. 1976, Kharkiv) is a multidisciplinary artist and inventor working across painting, sculpture and graphic art. He holds a patent for the kinetic construction "Kaskad" and developed his own light-sensitive RGB painting technique, in which three distinct visual layers are embedded within a single canvas and revealed under red, green or blue light.</p>
-          <p>Since 2013 he has been a regular participant of the LOM International Festival of Contemporary Art (Yekaterinburg), winning awards twice. He took part in restoring murals at Holy Trinity Church in Kharkiv, in the redesign of Kharkiv Zoo, Gorky Park and several water parks, and in an ice-sculpture festival in Moscow.</p>
+          <p><strong>Mykhailo Kashkarov</strong> (b. 1976, Kharkiv) is an artist and inventor working at the intersection of optics, painting and science. He is the creator of a unique light-sensitive RGB painting technique: a single canvas holds three independent visual layers, each revealed only under a specific spectrum of light — red, green or blue. This turns the painting from a static object into a dynamic one that changes together with the light and draws the viewer into direct interaction.</p>
+          <p>The technique is grounded in his own theoretical model, SCI (Spectral Channel Integrity), which describes the isolation and normalization of three pigment channels; the research is published in the Zenodo repository (2026).</p>
+          <p>Mykhailo is also the author and patent holder of the kinetic construction "Kaskad". His works are held at the National Art Museum of Ukraine (Kyiv), the Landau Center, and the Repin Art-Memorial Museum (Chuhuiv).</p>
           <div class="quote">
             "Mykhailo is passionate about the planet's ecological challenges. He loves all living things and experiments freely and joyfully. His work harmoniously weaves color, abstract form, line and intersection, reflecting the transience of time and the beauty and harmony of the outer world."
             <cite>— A. Honcharova, gallerist</cite>
@@ -304,7 +297,7 @@
             </ul>
           </div>
           <div class="war-note">
-            Since 2022 Mykhailo has been creating NFT art collections. These works were born in the first days of russia's full-scale invasion of Ukraine — amid anxiety, sleeplessness and racing thoughts; the project became a way to process reality, and the resulting images reflect that emotional state. Part of the proceeds from these works supports people affected by the war and the needs of the Armed Forces of Ukraine. Collection on <a href="https://opensea.io/MihailKashkarov" target="_blank" rel="noopener" style="text-decoration:underline">OpenSea</a>.
+            Since 2022 Mykhailo has been creating NFT art collections. These works were born in the first days of russia's full-scale invasion of Ukraine — amid anxiety, sleeplessness and racing thoughts. The project became a way to process reality, and the resulting images reflect that emotional state. Collection on <a href="https://opensea.io/MihailKashkarov" target="_blank" rel="noopener" style="text-decoration:underline">OpenSea</a>.
           </div>
         </div>
       </div>
@@ -315,7 +308,7 @@
 <section id="sci" class="sci">
   <div class="wrap">
     <div class="section-head">
-      <div class="kicker uk">Наукова модель</div><div class="kicker en">Scientific Model</div>
+      <div class="kicker uk">Теоретична модель</div><div class="kicker en">Theoretical Model</div>
       <h2 class="uk">SCI — Spectral Channel Integrity</h2><h2 class="en">SCI — Spectral Channel Integrity</h2>
     </div>
     <div class="sci-body">
@@ -331,7 +324,7 @@
     <div class="tools-grid">
       <a class="tool-card" href="https://astra31415926.github.io/SCI-Universal/" target="_blank" rel="noopener">
         <h4>SCI Universal</h4>
-        <p class="uk">Повний опис моделі, формули, застосування</p><p class="en">Full model description, formulas, applications</p>
+        <p class="uk">Опис моделі, формули, застосування</p><p class="en">Model description, formulas, applications</p>
         <span class="arrow">→ astra31415926.github.io/SCI-Universal</span>
       </a>
       <a class="tool-card" href="https://astra31415926.github.io/QR.G.B.-ART/" target="_blank" rel="noopener">
@@ -339,30 +332,6 @@
         <p class="uk">Генератор потрійних кольорових QR-кодів</p><p class="en">Spectral 3-in-1 color QR generator</p>
         <span class="arrow">→ Live demo</span>
       </a>
-      <a class="tool-card" href="https://github.com/Astra31415926/QRnament2" target="_blank" rel="noopener">
-        <h4>QRnament2</h4>
-        <p class="uk">Мандала-орнаменти з вбудованими даними</p><p class="en">Mandala ornaments with embedded data</p>
-        <span class="arrow">→ GitHub</span>
-      </a>
-      <a class="tool-card" href="https://github.com/Astra31415926/sci-spec" target="_blank" rel="noopener">
-        <h4>SCI Spec</h4>
-        <p class="uk">Технічна специфікація моделі SCI</p><p class="en">SCI model technical specification</p>
-        <span class="arrow">→ GitHub</span>
-      </a>
-      <a class="tool-card" href="https://github.com/Astra31415926/CryptoSnowQR" target="_blank" rel="noopener">
-        <h4>CryptoSnowQR</h4>
-        <p class="uk">Художній QR-проєкт на основі SCI</p><p class="en">SCI-based artistic QR project</p>
-        <span class="arrow">→ GitHub</span>
-      </a>
-    </div>
-    <div class="pubs">
-      <h3 class="uk">Публікації</h3><h3 class="en">Publications</h3>
-      <div>
-        <a href="https://zenodo.org/records/19633526" target="_blank" rel="noopener">Zenodo — Author Records</a>
-        <a href="https://zenodo.org/records/18895764" target="_blank" rel="noopener">Zenodo — SCI Research (DOI)</a>
-        <a href="https://medium.com/@Bakminsterfuler/sci-universal-model-905efe92e766" target="_blank" rel="noopener">Medium — SCI Universal Model</a>
-        <a href="https://telegra.ph/White-Paper-SCI-Encoding-02-22" target="_blank" rel="noopener"><span class="uk">White Paper (укр.)</span><span class="en">White Paper (EN)</span></a>
-      </div>
     </div>
   </div>
 </section>
@@ -411,35 +380,6 @@
     </div>
     <p class="permanent-note uk"><strong>Постійні експозиції:</strong> Ландау-центр (Харків), Художній музей імені І. Рєпіна (Чугуїв)</p>
     <p class="permanent-note en"><strong>Permanent exhibitions:</strong> Landau Center (Kharkiv), Repin Art Museum (Chuhuiv)</p>
-  </div>
-</section>
-
-<section id="awards">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="kicker uk">Визнання</div><div class="kicker en">Recognition</div>
-      <h2 class="uk">Нагороди та патенти</h2><h2 class="en">Awards & Patents</h2>
-    </div>
-    <div class="awards-grid">
-      <div class="card award-card">
-        <div class="award-medal">🥇</div>
-        <h4 class="uk">1 місце — «ЛОМ», 2017</h4><h4 class="en">1st Place — LOM, 2017</h4>
-        <p class="uk">Номінація «Найоригінальніше художнє використання металобрухту», кінетична скульптура «Хвиля»</p>
-        <p class="en">"Most Original Artistic Use of Scrap Metal", kinetic sculpture "Wave"</p>
-      </div>
-      <div class="card award-card">
-        <div class="award-medal">🥉</div>
-        <h4 class="uk">3 місце — «ЛОМ», 2018</h4><h4 class="en">3rd Place — LOM, 2018</h4>
-        <p class="uk">Номінація «Найкращий твір сучасного мистецтва», скульптура «Мушля»</p>
-        <p class="en">"Best Work of Contemporary Art", sculpture "Shell"</p>
-      </div>
-      <div class="card award-card">
-        <div class="award-medal">⚙️</div>
-        <h4 class="uk">Патент</h4><h4 class="en">Patent</h4>
-        <p class="uk">Кінетична конструкція «Каскад»</p>
-        <p class="en">Kinetic construction "Kaskad"</p>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -502,33 +442,6 @@
 </footer>
 
 <script>
-  function setLang(lang){
-    document.documentElement.dataset.lang = lang;
-    document.documentElement.lang = lang;
-    document.getElementById('btn-uk').classList.toggle('active', lang==='uk');
-    document.getElementById('btn-en').classList.toggle('active', lang==='en');
-    localStorage.setItem('kashkarov-lang', lang);
-    document.title = lang==='uk'
-      ? "Михайло Кашкаров — RGB Art & SCI Model | Mykhailo Kashkarov"
-      : "Mykhailo Kashkarov — RGB Art & SCI Model | Science-Art Artist";
-    const desc = document.querySelector('meta[name="description"]');
-    desc.setAttribute('content', lang==='uk'
-      ? "Михайло Кашкаров — сайнс-арт художник з Харкова. Автор техніки світлочутливого RGB-живопису та наукової моделі SCI (Spectral Channel Integrity). Виставки, нагороди, NFT, роботи."
-      : "Mykhailo Kashkarov is a science-art artist from Kharkiv. Creator of the light-sensitive RGB painting technique and the SCI (Spectral Channel Integrity) scientific model. Exhibitions, awards, NFT, works.");
-    renderGallery();
-  }
-  (function(){
-    const saved = localStorage.getItem('kashkarov-lang');
-    if(saved) setLang(saved);
-  })();
-
-  document.getElementById('burger').addEventListener('click', () => {
-    document.getElementById('mobile-menu').classList.toggle('show');
-  });
-  document.querySelectorAll('.mobile-menu a').forEach(a=>{
-    a.addEventListener('click', ()=> document.getElementById('mobile-menu').classList.remove('show'));
-  });
-
   const artworks = [
     { uk:"Анжеліна Джолі", en:"Angelina Jolie", size:"100 × 75 см", white:"angelina-white.jpg", red:"angelina-red.jpg", green:"angelina-green.jpg", blue:"angelina-blue.jpg" },
     { uk:"Термінатор", en:"Terminator", size:"120 × 85 см", white:"terminator-white.jpg", red:"terminator-red.jpg", green:"terminator-green.jpg", blue:"terminator-blue.jpg" },
@@ -586,7 +499,35 @@
       });
     });
   }
-  renderGallery();
+
+  function setLang(lang){
+    document.documentElement.dataset.lang = lang;
+    document.documentElement.lang = lang;
+    document.getElementById('btn-uk').classList.toggle('active', lang==='uk');
+    document.getElementById('btn-en').classList.toggle('active', lang==='en');
+    localStorage.setItem('kashkarov-lang', lang);
+    document.title = lang==='uk'
+      ? "Михайло Кашкаров — RGB Art & SCI Model | Mykhailo Kashkarov"
+      : "Mykhailo Kashkarov — RGB Art & SCI Model | Science-Art Artist";
+    const desc = document.querySelector('meta[name="description"]');
+    desc.setAttribute('content', lang==='uk'
+      ? "Михайло Кашкаров — сайнс-арт художник з Харкова. Автор техніки світлочутливого RGB-живопису та теоретичної моделі SCI (Spectral Channel Integrity). Виставки, NFT, роботи."
+      : "Mykhailo Kashkarov is a science-art artist from Kharkiv. Creator of the light-sensitive RGB painting technique and the SCI (Spectral Channel Integrity) theoretical model. Exhibitions, NFT, works.");
+    renderGallery();
+  }
+
+  document.getElementById('burger').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('show');
+  });
+  document.querySelectorAll('.mobile-menu a').forEach(a=>{
+    a.addEventListener('click', ()=> document.getElementById('mobile-menu').classList.remove('show'));
+  });
+
+  (function(){
+    const saved = localStorage.getItem('kashkarov-lang');
+    if(saved) setLang(saved);
+    else renderGallery();
+  })();
 </script>
 </body>
 </html>
