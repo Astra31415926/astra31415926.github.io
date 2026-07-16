@@ -1,13 +1,23 @@
 # Kashkarov RGB Art Portfolio
-Персональний сайт-портфоліо художника Михайла Кашкарова.
 
-## Про проєкт
-Інтерактивна галерея світлочутливого живопису. Використовується унікальна **RGB-техніка**, де зображення змінюється залежно від спектра світла.
+Персональний двомовний (UA/EN) сайт-портфоліо художника Михайла Кашкарова: [astra31415926.github.io](https://astra31415926.github.io/)
+
+## Розділи
+* **Hero** — головний екран
+* **About** — біографія, освіта, NFT-проєкт
+* **SCI Model** — наукова модель Spectral Channel Integrity + посилання на інструменти (QR.G.B.-ART, QRnament2, sci-spec, CryptoSnowQR, SCI-Universal)
+* **Works** — інтерактивна галерея світлочутливого живопису (RGB-техніка)
+* **Exhibitions** — хронологія виставок
+* **Awards** — нагороди та патенти
+* **Contacts** — email, телефон, соцмережі, OpenSea
 
 ## Технології
-* HTML5 / CSS3 / JavaScript
-* Техніка спектральної нормалізації (SCI Model)
+* HTML5 / CSS3 / JavaScript (без збірки, без залежностей)
+* Перемикач мов UA/EN (localStorage)
+* SEO: meta description, Open Graph, Twitter Card, JSON-LD (schema.org/Person), sitemap.xml, robots.txt
 
 ## Контакти
+* **Email:** bakminsterfuler@gmail.com
 * **Телефон:** +380 63 505 8292
-* **Сайт:** [Ваше посилання на GitHub Pages або Netlify]
+* **Instagram:** [@mixailkashkarov](https://instagram.com/mixailkashkarov)
+* **OpenSea:** [MihailKashkarov](https://opensea.io/MihailKashkarov)

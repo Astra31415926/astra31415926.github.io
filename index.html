@@ -1,334 +1,592 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="uk" data-lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>KASHKAROV RGB ART | Світлочутливий живопис</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Михайло Кашкаров — RGB Art &amp; SCI Model | Mykhailo Kashkarov</title>
+<meta name="description" content="Михайло Кашкаров — сайнс-арт художник з Харкова. Автор техніки світлочутливого RGB-живопису та наукової моделі SCI (Spectral Channel Integrity). Виставки, нагороди, NFT, роботи.">
+<meta name="keywords" content="Михайло Кашкаров, Mykhailo Kashkarov, science art, RGB живопис, SCI Model, світлочутливий живопис, Spectral Channel Integrity, NFT art, Kharkiv artist, український художник">
+<meta name="author" content="Mykhailo Kashkarov">
+<link rel="canonical" href="https://astra31415926.github.io/">
+<meta name="robots" content="index, follow">
 
-        body {
-            font-family: 'Inter', sans-serif;
-            background: #f5f7fb;
-            color: #1a2a3a;
-            padding: 16px;
-            font-size: 18px; /* Базовий великий шрифт */
-        }
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Михайло Кашкаров — RGB Art & SCI Model">
+<meta property="og:description" content="Сайнс-арт художник: світлочутливий RGB-живопис, наукова модель SCI, NFT, виставки та нагороди.">
+<meta property="og:image" content="https://astra31415926.github.io/author-new.jpg">
+<meta property="og:url" content="https://astra31415926.github.io/">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:locale:alternate" content="en_US">
 
-        .container {
-            max-width: 600px; /* Вузький контейнер для телефону */
-            margin: 0 auto;
-        }
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mykhailo Kashkarov — RGB Art & SCI Model">
+<meta name="twitter:description" content="Science-art artist: light-sensitive RGB painting, the SCI spectral model, NFT art, exhibitions & awards.">
+<meta name="twitter:image" content="https://astra31415926.github.io/author-new.jpg">
 
-        /* Шапка */
-        .header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 15px;
-            margin-bottom: 30px;
-            padding-bottom: 15px;
-            border-bottom: 2px solid #ddd;
-        }
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f172a'/%3E%3Ccircle cx='12' cy='13' r='6' fill='%23ff3b3b' opacity='0.85'/%3E%3Ccircle cx='20' cy='13' r='6' fill='%2322d37a' opacity='0.85'/%3E%3Ccircle cx='16' cy='20' r='6' fill='%233b82f6' opacity='0.85'/%3E%3C/svg%3E">
 
-        .title-section h1 {
-            font-size: 32px;
-            font-weight: 700;
-        }
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Mykhailo Kashkarov",
+  "alternateName": "Михайло Кашкаров",
+  "jobTitle": "Science-Art Artist",
+  "birthDate": "1976",
+  "birthPlace": "Kharkiv, Ukraine",
+  "url": "https://astra31415926.github.io/",
+  "image": "https://astra31415926.github.io/author-new.jpg",
+  "email": "mailto:bakminsterfuler@gmail.com",
+  "sameAs": [
+    "https://github.com/Astra31415926",
+    "https://instagram.com/mixailkashkarov",
+    "https://opensea.io/MihailKashkarov",
+    "https://www.youtube.com/@Michael-RGB-ART",
+    "https://t.me/MichaelKashkarov",
+    "https://x.com/MihailKashkarov",
+    "https://medium.com/@Bakminsterfuler",
+    "https://zenodo.org/records/19633526"
+  ]
+}
+</script>
 
-        .title-section p {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 14px;
-            color: #666;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#f5f7fb; --card:#ffffff; --ink:#0f172a; --muted:#5b6b7c;
+    --line:#e3e8ef; --teal:#14b8a6; --r:#e11d48; --g:#16a34a; --b:#2563eb;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  .mono{font-family:'JetBrains Mono',monospace}
+  [data-lang="uk"] .en{display:none}
+  [data-lang="en"] .uk{display:none}
 
-        .sci-button {
-            background: #0f172a;
-            color: white;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 14px;
-            font-weight: 600;
-            padding: 10px 20px;
-            border-radius: 40px;
-            text-decoration: none;
-            display: inline-block;
-        }
+  .wrap{max-width:1080px;margin:0 auto;padding:0 20px}
 
-        /* Галерея */
-        .art-item {
-            background: white;
-            border-radius: 24px;
-            overflow: hidden;
-            margin-bottom: 40px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
+  /* NAV */
+  .nav{position:sticky;top:0;z-index:100;background:rgba(245,247,251,0.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  .nav-inner{max-width:1080px;margin:0 auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+  .brand{font-weight:800;letter-spacing:.5px;font-size:17px;text-decoration:none;white-space:nowrap}
+  .brand span{color:var(--teal)}
+  .nav-links{display:none;gap:22px;font-size:14px;font-weight:600}
+  .nav-links a{text-decoration:none;color:var(--muted);transition:.2s}
+  .nav-links a:hover{color:var(--ink)}
+  .nav-right{display:flex;align-items:center;gap:10px}
+  .lang-switch{display:flex;background:#e9edf3;border-radius:8px;padding:3px;font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700}
+  .lang-switch button{border:0;background:transparent;padding:6px 10px;border-radius:6px;cursor:pointer;color:var(--muted)}
+  .lang-switch button.active{background:var(--ink);color:#fff}
+  .burger{display:block;background:none;border:0;font-size:22px;cursor:pointer;padding:4px 8px}
+  .mobile-menu{display:none;flex-direction:column;background:var(--card);border-bottom:1px solid var(--line)}
+  .mobile-menu.show{display:flex}
+  .mobile-menu a{padding:14px 20px;text-decoration:none;color:var(--ink);font-weight:600;border-top:1px solid var(--line);font-size:15px}
 
-        .art-image {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
+  @media (min-width:860px){
+    .nav-links{display:flex}
+    .burger{display:none}
+  }
 
-        .art-info {
-            padding: 20px;
-            text-align: center;
-        }
+  /* HERO */
+  .hero{position:relative;overflow:hidden;background:var(--ink);color:#fff}
+  .hero-inner{max-width:1080px;margin:0 auto;padding:56px 20px 64px;display:flex;flex-direction:column-reverse;gap:36px;align-items:center}
+  .hero-photo{width:100%;max-width:360px;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,0.12);box-shadow:0 20px 60px rgba(0,0,0,0.45)}
+  .hero-photo img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/5}
+  .hero-text{text-align:center}
+  .hero-eyebrow{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:2px;color:#9db4c9;text-transform:uppercase;display:flex;justify-content:center;gap:6px;align-items:center;margin-bottom:14px}
+  .rgb-dots{display:inline-flex;gap:4px}
+  .rgb-dots span{width:8px;height:8px;border-radius:50%;display:inline-block}
+  .rgb-dots span:nth-child(1){background:var(--r)}
+  .rgb-dots span:nth-child(2){background:var(--g)}
+  .rgb-dots span:nth-child(3){background:var(--b)}
+  .hero-text h1{font-size:clamp(30px,6vw,52px);font-weight:800;line-height:1.1;margin-bottom:14px}
+  .hero-text p.lead{color:#c7d3de;font-size:17px;max-width:520px;margin:0 auto 26px}
+  .hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-block;padding:13px 24px;border-radius:40px;text-decoration:none;font-weight:700;font-size:14px;transition:.2s;cursor:pointer;border:1px solid transparent}
+  .btn-primary{background:var(--teal);color:#062a26}
+  .btn-primary:hover{filter:brightness(1.08)}
+  .btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,0.3)}
+  .btn-ghost:hover{background:rgba(255,255,255,0.08)}
 
-        .art-title {
-            font-weight: 700;
-            font-size: 28px;
-            margin-bottom: 8px;
-        }
+  @media (min-width:760px){
+    .hero-inner{flex-direction:row;text-align:left;padding:80px 20px 90px}
+    .hero-text{text-align:left}
+    .hero-eyebrow{justify-content:flex-start}
+    .hero-text p.lead{margin:0 0 26px}
+    .hero-cta{justify-content:flex-start}
+    .hero-photo{max-width:300px;flex-shrink:0}
+  }
 
-        .art-size {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 16px;
-            color: #666;
-            margin-bottom: 16px;
-        }
+  /* SECTIONS */
+  section{padding:64px 0}
+  .section-head{margin-bottom:32px}
+  .kicker{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--teal);font-weight:700;margin-bottom:8px}
+  h2{font-size:clamp(24px,4vw,34px);font-weight:800}
+  .section-lead{color:var(--muted);max-width:640px;margin-top:10px;font-size:16px}
 
-        /* Великі кнопки */
-        .light-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-            margin-top: 8px;
-        }
+  .card{background:var(--card);border:1px solid var(--line);border-radius:20px}
 
-        .light-btn {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 16px;
-            font-weight: 600;
-            padding: 10px 20px;
-            border-radius: 50px;
-            border: none;
-            cursor: pointer;
-            transition: 0.2s;
-            background: #e2e8f0;
-            color: #1e2b3c;
-        }
+  /* ABOUT */
+  .about-grid{display:grid;gap:28px;align-items:start}
+  .about-photo{border-radius:20px;overflow:hidden;box-shadow:0 10px 30px rgba(15,23,42,0.12)}
+  .about-photo img{aspect-ratio:4/5;object-fit:cover;width:100%}
+  .about-text p{margin-bottom:14px;color:#2a3b4d;font-size:16px}
+  .quote{border-left:4px solid var(--teal);padding:16px 20px;background:#eef7f5;border-radius:0 14px 14px 0;font-style:italic;color:#0f3d36;margin:20px 0}
+  .quote cite{display:block;margin-top:10px;font-style:normal;font-weight:700;font-size:13px;color:var(--muted)}
+  .edu{margin-top:18px;padding-top:18px;border-top:1px solid var(--line)}
+  .edu h3{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:var(--muted);margin-bottom:10px}
+  .edu ul{list-style:none}
+  .edu li{padding:6px 0;font-size:15px}
+  .war-note{margin-top:20px;padding:18px 20px;border-radius:14px;background:#fff7ed;border:1px solid #fed7aa;font-size:15px;color:#7c2d12}
 
-        .light-btn.active {
-            background: #1e2b3c;
-            color: white;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
+  @media (min-width:760px){
+    .about-grid{grid-template-columns:280px 1fr;gap:44px}
+  }
 
-        /* Колірні кнопки для інтерактивності */
-        .light-btn[data-mode="white"] { background: #f1f5f9; color: #0f172a; }
-        .light-btn[data-mode="red"] { background: #fee2e2; color: #991b1b; }
-        .light-btn[data-mode="green"] { background: #dcfce7; color: #166534; }
-        .light-btn[data-mode="blue"] { background: #dbeafe; color: #1e40af; }
+  /* SCI MODEL */
+  .sci{background:#0f172a;color:#fff}
+  .sci .kicker{color:#5eead4}
+  .sci .section-lead{color:#b7c4d1}
+  .sci-body{color:#dbe4ee;font-size:16px;max-width:760px;margin-bottom:36px}
+  .sci-body p{margin-bottom:14px}
+  .tools-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+  .tool-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:20px;text-decoration:none;color:#fff;transition:.2s}
+  .tool-card:hover{background:rgba(255,255,255,0.09);transform:translateY(-2px)}
+  .tool-card h4{font-size:15px;font-weight:700;margin-bottom:6px}
+  .tool-card p{font-size:13px;color:#a9b8c7}
+  .tool-card .arrow{font-family:'JetBrains Mono',monospace;font-size:12px;color:#5eead4;margin-top:10px;display:block}
+  .pubs{margin-top:32px;padding-top:24px;border-top:1px solid rgba(255,255,255,0.12)}
+  .pubs h3{font-size:14px;text-transform:uppercase;letter-spacing:1px;color:#8ea2b3;margin-bottom:12px}
+  .pubs a{display:inline-block;margin:0 14px 10px 0;font-size:14px;color:#5eead4;text-decoration:underline}
 
-        .light-btn.active { 
-            background: #0f172a !important; 
-            color: white !important;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-            transform: scale(0.98);
-        }
+  /* WORKS */
+  .gallery{display:grid;grid-template-columns:1fr;gap:28px}
+  @media (min-width:700px){ .gallery{grid-template-columns:1fr 1fr} }
+  .art-item{background:var(--card);border-radius:20px;overflow:hidden;border:1px solid var(--line)}
+  .art-image{width:100%;height:auto;aspect-ratio:1/1;object-fit:cover}
+  .art-info{padding:18px 20px}
+  .art-title{font-weight:700;font-size:19px;margin-bottom:4px}
+  .art-size{font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--muted);margin-bottom:14px}
+  .light-buttons{display:flex;gap:8px;flex-wrap:wrap}
+  .light-btn{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:700;padding:8px 14px;border-radius:40px;border:none;cursor:pointer;background:#e2e8f0;color:#1e2b3c}
+  .light-btn[data-mode="white"]{background:#f1f5f9;color:#0f172a}
+  .light-btn[data-mode="red"]{background:#fee2e2;color:#991b1b}
+  .light-btn[data-mode="green"]{background:#dcfce7;color:#166534}
+  .light-btn[data-mode="blue"]{background:#dbeafe;color:#1e40af}
+  .light-btn.active{background:#0f172a !important;color:#fff !important;box-shadow:0 2px 8px rgba(0,0,0,0.2)}
 
-        /* Секції */
-        .section {
-            background: white;
-            border-radius: 28px;
-            padding: 24px;
-            margin: 32px 0;
-        }
+  /* EXHIBITIONS / AWARDS */
+  .timeline{list-style:none}
+  .timeline li{display:grid;grid-template-columns:90px 1fr;gap:16px;padding:16px 0;border-top:1px solid var(--line)}
+  .timeline li:first-child{border-top:none}
+  .t-year{font-family:'JetBrains Mono',monospace;font-weight:700;color:var(--teal)}
+  .t-desc{color:#2a3b4d;font-size:15px}
+  .permanent-note{margin-top:20px;padding:16px 20px;background:#eef2f6;border-radius:14px;font-size:14px;color:var(--muted)}
 
-        .section h2 {
-            font-size: 26px;
-            font-weight: 700;
-            border-left: 5px solid #14b8a6;
-            padding-left: 16px;
-            margin-bottom: 20px;
-        }
+  .awards-grid{display:grid;gap:18px}
+  @media (min-width:700px){ .awards-grid{grid-template-columns:1fr 1fr 1fr} }
+  .award-card{padding:24px;text-align:center}
+  .award-medal{font-size:30px;margin-bottom:10px}
+  .award-card h4{font-size:15px;font-weight:700;margin-bottom:6px}
+  .award-card p{font-size:13px;color:var(--muted)}
 
-        .section ul {
-            margin-left: 24px;
-            font-size: 18px;
-            line-height: 1.5;
-        }
+  /* CONTACTS */
+  .contacts{background:var(--ink);color:#fff}
+  .contacts .kicker{color:#5eead4}
+  .contact-grid{display:grid;gap:14px;margin-top:28px}
+  @media (min-width:700px){ .contact-grid{grid-template-columns:1fr 1fr} }
+  .contact-link{display:flex;align-items:center;gap:14px;padding:18px 20px;background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:14px;text-decoration:none;color:#fff;transition:.2s}
+  .contact-link:hover{background:rgba(255,255,255,0.09)}
+  .contact-ico{font-size:20px;width:28px;text-align:center;flex-shrink:0}
+  .contact-link .lbl{font-size:12px;color:#9db4c9;text-transform:uppercase;letter-spacing:.5px}
+  .contact-link .val{font-size:14px;font-weight:600;word-break:break-word}
 
-        .section li {
-            margin-bottom: 8px;
-        }
-
-        .author-wrapper {
-            display: flex;
-            gap: 24px;
-            flex-wrap: wrap;
-            align-items: center;
-        }
-
-        .author-photo {
-            max-width: 140px;
-            width: 100%;
-            border-radius: 20px;
-        }
-
-        .author-wrapper p {
-            font-size: 18px;
-            line-height: 1.5;
-            margin-bottom: 12px;
-        }
-
-        .contacts {
-            background: #eef2f6;
-            padding: 24px;
-            border-radius: 28px;
-            text-align: center;
-            font-size: 18px;
-        }
-
-        .contacts a {
-            font-size: 18px;
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 48px;
-            font-size: 14px;
-            color: #777;
-        }
-
-        /* Телефонна версія */
-        @media (max-width: 600px) {
-            body {
-                padding: 12px;
-            }
-            .art-title {
-                font-size: 26px;
-            }
-            .art-size {
-                font-size: 15px;
-            }
-            .light-btn {
-                font-size: 15px;
-                padding: 10px 18px;
-            }
-            .section h2 {
-                font-size: 24px;
-            }
-            .section ul, .section li, .author-wrapper p, .contacts, .contacts a {
-                font-size: 17px;
-            }
-        }
-    </style>
+  footer{text-align:center;padding:32px 20px;font-size:13px;color:var(--muted)}
+</style>
 </head>
 <body>
-<div class="container">
-    <div class="header">
-        <div class="title-section">
-            <h1>KASHKAROV RGB ART</h1>
-            <p>Світлочутливий живопис · Михайло Кашкаров</p>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="brand">KASHKAROV <span>RGB ART</span></a>
+    <div class="nav-links">
+      <a href="#about" class="uk">Про автора</a><a href="#about" class="en">About</a>
+      <a href="#sci" class="uk">SCI Model</a><a href="#sci" class="en">SCI Model</a>
+      <a href="#works" class="uk">Роботи</a><a href="#works" class="en">Works</a>
+      <a href="#exhibitions" class="uk">Виставки</a><a href="#exhibitions" class="en">Exhibitions</a>
+      <a href="#awards" class="uk">Нагороди</a><a href="#awards" class="en">Awards</a>
+      <a href="#contacts" class="uk">Контакти</a><a href="#contacts" class="en">Contacts</a>
+    </div>
+    <div class="nav-right">
+      <div class="lang-switch">
+        <button id="btn-uk" class="active" onclick="setLang('uk')">UA</button>
+        <button id="btn-en" onclick="setLang('en')">EN</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about" class="uk">Про автора</a><a href="#about" class="en">About</a>
+    <a href="#sci" class="uk">SCI Model</a><a href="#sci" class="en">SCI Model</a>
+    <a href="#works" class="uk">Роботи</a><a href="#works" class="en">Works</a>
+    <a href="#exhibitions" class="uk">Виставки</a><a href="#exhibitions" class="en">Exhibitions</a>
+    <a href="#awards" class="uk">Нагороди</a><a href="#awards" class="en">Awards</a>
+    <a href="#contacts" class="uk">Контакти</a><a href="#contacts" class="en">Contacts</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-photo">
+      <img src="hero.jpg" alt="Mykhailo Kashkarov in his studio" onerror="this.onerror=null;this.src='author-new.jpg'">
+    </div>
+    <div class="hero-text">
+      <div class="hero-eyebrow"><span class="rgb-dots"><span></span><span></span><span></span></span> <span class="uk">Сайнс-арт художник · Харків</span><span class="en">Science-Art Artist · Kharkiv</span></div>
+      <h1 class="uk">Михайло Кашкаров</h1>
+      <h1 class="en">Mykhailo Kashkarov</h1>
+      <p class="lead uk">Художник і винахідник, що працює на перетині живопису та дослідження світла. Автор техніки світлочутливого RGB-живопису та наукової моделі SCI (Spectral Channel Integrity).</p>
+      <p class="lead en">Artist and inventor working at the intersection of painting and light research. Creator of the light-sensitive RGB painting technique and the SCI (Spectral Channel Integrity) scientific model.</p>
+      <div class="hero-cta">
+        <a href="#works" class="btn btn-primary uk">Переглянути роботи</a>
+        <a href="#works" class="btn btn-primary en">View Works</a>
+        <a href="#sci" class="btn btn-ghost uk">Модель SCI</a>
+        <a href="#sci" class="btn btn-ghost en">SCI Model</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker uk">Біографія</div><div class="kicker en">Biography</div>
+      <h2 class="uk">Про автора</h2><h2 class="en">About the Artist</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-photo"><img src="author-new.jpg" alt="Mykhailo Kashkarov portrait"></div>
+      <div class="about-text">
+        <div class="uk">
+          <p><strong>Михайло Кашкаров</strong> (нар. 1976, Харків) — багатопрофільний художник і винахідник, що працює на перетині живопису, скульптури та графіки. Автор запатентованої кінетичної конструкції «Каскад» та власної техніки світлочутливого RGB-живопису, у якій зображення трансформується залежно від спектра освітлення: три різні візуальні структури нашаровані в одному полотні й проявляються під впливом червоного, зеленого чи синього світла.</p>
+          <p>З 2013 року — постійний учасник Міжнародного фестивалю сучасного мистецтва «ЛОМ» (Єкатеринбург), де двічі ставав лауреатом. Брав участь у реставрації розписів Свято-Троїцької церкви в Харкові, оформленні Харківського зоопарку, парку Горького та аквапарків у кількох містах, а також фестивалю льодових скульптур у Москві.</p>
+          <div class="quote">
+            «Михайло захоплений проблемами екології планети. Любить усе живе, багато і з задоволенням експериментує. У своїй творчості гармонійно поєднує колір, абстрактні форми, лінії, перетини, відображаючи швидкоплинність часу, красу і гармонію зовнішнього світу.»
+            <cite>— А. Гончарова, галерист</cite>
+          </div>
+          <div class="edu">
+            <h3>Освіта</h3>
+            <ul>
+              <li>1998 — Харківське художнє училище</li>
+              <li>1999–2001 — Харківська академія дизайну і мистецтв, кафедра станкової графіки</li>
+              <li>2003–2005 — Харківська академія дизайну і мистецтв, кафедра монументальної скульптури</li>
+            </ul>
+          </div>
+          <div class="war-note">
+            З 2022 року Михайло створює колекції NFT-мистецтва. Ці роботи народилися в перші дні повномасштабного вторгнення росії в Україну — серед тривоги, безсоння і сплутаних думок; проєкт став способом впоратися з реальністю, а створені образи відображають емоційний стан того часу. Частина коштів від продажу цих робіт спрямовується на допомогу постраждалим від війни та потреби Збройних сил України. Колекція — на <a href="https://opensea.io/MihailKashkarov" target="_blank" rel="noopener" style="text-decoration:underline">OpenSea</a>.
+          </div>
         </div>
-        <a href="https://astra31415926.github.io/sci-portal/" class="sci-button">⚡ Model SCI</a>
-    </div>
-
-    <div id="gallery"></div>
-
-    <div class="section">
-        <h2>Виставки та проєкти</h2>
-        <ul>
-            <li><strong>2000</strong> – Групова виставка, галерея «Напроти», Харків</li>
-            <li><strong>2010</strong> – Проєкт «Особистість у кубі» (світлочутливий живопис, з Олегом Калашником)</li>
-            <li><strong>2012</strong> – Ніч музеїв, Gagarin Fest, GogolFest</li>
-            <li><strong>2013–дотепер</strong> – Постійний учасник LOM International Festival of Contemporary Art</li>
-            <li><strong>2017</strong> – 1 місце «Найоригінальніше використання металобрухту» (кінетична скульптура «Хвиля»)</li>
-            <li><strong>2019</strong> – Фестиваль ленд-арту «Зелена хвиля», Дніпро</li>
-            <li><strong>2022</strong> – Проєкт світлочутливого живопису, виставка «Enfant Terrible»</li>
-            <li><strong>2023</strong> – Національний музей Тараса Шевченка, Київ</li>
-        </ul>
-        <p style="margin-top: 16px; font-size: 17px;"><strong>Постійні експозиції:</strong> Ландау-центр (Харків), Художній музей імені Іллі Рєпіна (Чугуїв)</p>
-    </div>
-
-    <div class="section">
-        <h2>Про автора</h2>
-        <div class="author-wrapper">
-            <img src="author-new.jpg" alt="Mykhailo Kashkarov" class="author-photo" onerror="this.style.display='none'">
-            <div>
-                <p><strong>Михайло Кашкаров</strong> працює на перетині мистецтва та дослідження світла. У своїй практиці він перетворює полотно на систему взаємодії кольору, де зображення змінюється залежно від спектрального освітлення.</p>
-                <p>Його авторська RGB-техніка базується на нашаруванні трьох візуальних структур в одному зображенні, що проявляються під впливом червоного, зеленого та синього світла.</p>
-                <p>Випускник Харківського художнього училища (1998) та Харківської академії дизайну і мистецтв (графіка 1999–2001, скульптура 2003–2005).</p>
-            </div>
+        <div class="en">
+          <p><strong>Mykhailo Kashkarov</strong> (b. 1976, Kharkiv) is a multidisciplinary artist and inventor working across painting, sculpture and graphic art. He holds a patent for the kinetic construction "Kaskad" and developed his own light-sensitive RGB painting technique, in which three distinct visual layers are embedded within a single canvas and revealed under red, green or blue light.</p>
+          <p>Since 2013 he has been a regular participant of the LOM International Festival of Contemporary Art (Yekaterinburg), winning awards twice. He took part in restoring murals at Holy Trinity Church in Kharkiv, in the redesign of Kharkiv Zoo, Gorky Park and several water parks, and in an ice-sculpture festival in Moscow.</p>
+          <div class="quote">
+            "Mykhailo is passionate about the planet's ecological challenges. He loves all living things and experiments freely and joyfully. His work harmoniously weaves color, abstract form, line and intersection, reflecting the transience of time and the beauty and harmony of the outer world."
+            <cite>— A. Honcharova, gallerist</cite>
+          </div>
+          <div class="edu">
+            <h3>Education</h3>
+            <ul>
+              <li>1998 — Kharkiv Art College</li>
+              <li>1999–2001 — Kharkiv State Academy of Design and Arts, Graphic Arts Dept.</li>
+              <li>2003–2005 — Kharkiv State Academy of Design and Arts, Monumental Sculpture Dept.</li>
+            </ul>
+          </div>
+          <div class="war-note">
+            Since 2022 Mykhailo has been creating NFT art collections. These works were born in the first days of russia's full-scale invasion of Ukraine — amid anxiety, sleeplessness and racing thoughts; the project became a way to process reality, and the resulting images reflect that emotional state. Part of the proceeds from these works supports people affected by the war and the needs of the Armed Forces of Ukraine. Collection on <a href="https://opensea.io/MihailKashkarov" target="_blank" rel="noopener" style="text-decoration:underline">OpenSea</a>.
+          </div>
         </div>
+      </div>
     </div>
+  </div>
+</section>
 
-    <div class="contacts">
-        <p>📞 <strong>+380 63 505 8292</strong><br>
-        ✉️ <a href="mailto:bakminsterfuler@gmail.com">bakminsterfuler@gmail.com</a><br>
-        🔗 <a href="https://github.com/Astra31415926" target="_blank">GitHub</a> · <a href="https://zenodo.org/records/19633526" target="_blank">Zenodo (SCI White Paper)</a></p>
+<section id="sci" class="sci">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker uk">Наукова модель</div><div class="kicker en">Scientific Model</div>
+      <h2 class="uk">SCI — Spectral Channel Integrity</h2><h2 class="en">SCI — Spectral Channel Integrity</h2>
     </div>
+    <div class="sci-body">
+      <div class="uk">
+        <p>Модель <strong>SCI (Spectral Channel Integrity)</strong> вирішує проблему збереження кольорового сигналу на різних фізичних носіях. Її ключова задача — усунення міжканальних завад (crosstalk) у субтрактивному друці за допомогою детермінованої нормалізації каналів RGB, що зберігає пропорції компонентів кольору після друку.</p>
+        <p>Модель дозволяє перетворювати фізичні поверхні — зокрема полотна, написані олійними фарбами чи акрилом — на стабільні носії даних, придатні для комп'ютерного зору, калібрування оптичних систем і багатоканального спектрального кодування, зокрема у форматі кольорових QR-кодів.</p>
+      </div>
+      <div class="en">
+        <p>The <strong>SCI (Spectral Channel Integrity)</strong> model addresses color-signal preservation across different physical media. Its core task is eliminating inter-channel crosstalk in subtractive printing through deterministic RGB channel normalization, keeping color-component proportions stable after printing.</p>
+        <p>The model turns physical surfaces — including oil or acrylic paintings on canvas — into stable data carriers suitable for computer vision, optical system calibration, and multi-channel spectral encoding, including color QR-code formats.</p>
+      </div>
+    </div>
+    <div class="tools-grid">
+      <a class="tool-card" href="https://astra31415926.github.io/SCI-Universal/" target="_blank" rel="noopener">
+        <h4>SCI Universal</h4>
+        <p class="uk">Повний опис моделі, формули, застосування</p><p class="en">Full model description, formulas, applications</p>
+        <span class="arrow">→ astra31415926.github.io/SCI-Universal</span>
+      </a>
+      <a class="tool-card" href="https://astra31415926.github.io/QR.G.B.-ART/" target="_blank" rel="noopener">
+        <h4>QR.G.B.-ART</h4>
+        <p class="uk">Генератор потрійних кольорових QR-кодів</p><p class="en">Spectral 3-in-1 color QR generator</p>
+        <span class="arrow">→ Live demo</span>
+      </a>
+      <a class="tool-card" href="https://github.com/Astra31415926/QRnament2" target="_blank" rel="noopener">
+        <h4>QRnament2</h4>
+        <p class="uk">Мандала-орнаменти з вбудованими даними</p><p class="en">Mandala ornaments with embedded data</p>
+        <span class="arrow">→ GitHub</span>
+      </a>
+      <a class="tool-card" href="https://github.com/Astra31415926/sci-spec" target="_blank" rel="noopener">
+        <h4>SCI Spec</h4>
+        <p class="uk">Технічна специфікація моделі SCI</p><p class="en">SCI model technical specification</p>
+        <span class="arrow">→ GitHub</span>
+      </a>
+      <a class="tool-card" href="https://github.com/Astra31415926/CryptoSnowQR" target="_blank" rel="noopener">
+        <h4>CryptoSnowQR</h4>
+        <p class="uk">Художній QR-проєкт на основі SCI</p><p class="en">SCI-based artistic QR project</p>
+        <span class="arrow">→ GitHub</span>
+      </a>
+    </div>
+    <div class="pubs">
+      <h3 class="uk">Публікації</h3><h3 class="en">Publications</h3>
+      <div>
+        <a href="https://zenodo.org/records/19633526" target="_blank" rel="noopener">Zenodo — Author Records</a>
+        <a href="https://zenodo.org/records/18895764" target="_blank" rel="noopener">Zenodo — SCI Research (DOI)</a>
+        <a href="https://medium.com/@Bakminsterfuler/sci-universal-model-905efe92e766" target="_blank" rel="noopener">Medium — SCI Universal Model</a>
+        <a href="https://telegra.ph/White-Paper-SCI-Encoding-02-22" target="_blank" rel="noopener"><span class="uk">White Paper (укр.)</span><span class="en">White Paper (EN)</span></a>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <footer>© 2026 Mykhailo Kashkarov · RGB Light-Sensitive Painting · SCI Model</footer>
-</div>
+<section id="works">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker uk">Галерея</div><div class="kicker en">Gallery</div>
+      <h2 class="uk">Світлочутливий RGB-живопис</h2><h2 class="en">Light-Sensitive RGB Painting</h2>
+      <p class="section-lead uk">Натисніть на кольорову кнопку, щоб побачити, як змінюється зображення залежно від спектра освітлення.</p>
+      <p class="section-lead en">Click a color button to see how the image transforms under different light spectra.</p>
+    </div>
+    <div id="gallery" class="gallery"></div>
+  </div>
+</section>
+
+<section id="exhibitions">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker uk">Хронологія</div><div class="kicker en">Timeline</div>
+      <h2 class="uk">Виставки та проєкти</h2><h2 class="en">Exhibitions & Projects</h2>
+    </div>
+    <div class="card" style="padding:8px 24px">
+      <ul class="timeline uk">
+        <li><span class="t-year">2000</span><span class="t-desc">Групова виставка, галерея «Напроти», Харків</span></li>
+        <li><span class="t-year">2010</span><span class="t-desc">Проєкт «Особистість у кубі» — світлочутливий живопис (спільно з Олегом Калашником); групова виставка «Салат», галерея «Маестро», Харків</span></li>
+        <li><span class="t-year">2012</span><span class="t-desc">«Ніч музеїв» (проєкт «Побратими по планеті»), Gagarin Fest, GogolFest; персональна виставка «Метаморфози еволюції, або Зорові галюцинації», галерея «Ас», Харків</span></li>
+        <li><span class="t-year">2013–</span><span class="t-desc">Постійний учасник Міжнародного фестивалю сучасного мистецтва «ЛОМ», Єкатеринбург</span></li>
+        <li><span class="t-year">2019</span><span class="t-desc">Фестиваль ленд-арту та садово-паркової скульптури «Зелена хвиля», Дніпро</span></li>
+        <li><span class="t-year">2020</span><span class="t-desc">Групова виставка скульптури «Вінегрет», галерея Г. Семирадського</span></li>
+        <li><span class="t-year">2021</span><span class="t-desc">Персональна виставка графіки і живопису, арт-кафе Brewki Bar</span></li>
+        <li><span class="t-year">2022</span><span class="t-desc">Проєкт світлочутливого живопису для виставки «Enfant Terrible» (у колаборації з О. Калашником)</span></li>
+        <li><span class="t-year">2023</span><span class="t-desc">Національний музей Тараса Шевченка, Київ</span></li>
+      </ul>
+      <ul class="timeline en">
+        <li><span class="t-year">2000</span><span class="t-desc">Group exhibition, "Naprotiv" Gallery, Kharkiv</span></li>
+        <li><span class="t-year">2010</span><span class="t-desc">"Personality in a Cube" project — light-sensitive painting (with Oleg Kalashnyk); group exhibition "Salad", Maestro Gallery, Kharkiv</span></li>
+        <li><span class="t-year">2012</span><span class="t-desc">"Night at the Museum" ("Planet Brethren" project), Gagarin Fest, GogolFest; solo exhibition "Metamorphoses of Evolution, or Visual Hallucinations", "As" Gallery, Kharkiv</span></li>
+        <li><span class="t-year">2013–</span><span class="t-desc">Regular participant of the LOM International Festival of Contemporary Art, Yekaterinburg</span></li>
+        <li><span class="t-year">2019</span><span class="t-desc">"Green Wave" land-art and garden sculpture festival, Dnipro</span></li>
+        <li><span class="t-year">2020</span><span class="t-desc">Group sculpture exhibition "Vinaigrette", G. Semiradsky Gallery</span></li>
+        <li><span class="t-year">2021</span><span class="t-desc">Solo exhibition of graphics and painting, Brewki Bar art-café</span></li>
+        <li><span class="t-year">2022</span><span class="t-desc">Light-sensitive painting project for the "Enfant Terrible" exhibition (in collaboration with O. Kalashnyk)</span></li>
+        <li><span class="t-year">2023</span><span class="t-desc">Taras Shevchenko National Museum, Kyiv</span></li>
+      </ul>
+    </div>
+    <p class="permanent-note uk"><strong>Постійні експозиції:</strong> Ландау-центр (Харків), Художній музей імені І. Рєпіна (Чугуїв)</p>
+    <p class="permanent-note en"><strong>Permanent exhibitions:</strong> Landau Center (Kharkiv), Repin Art Museum (Chuhuiv)</p>
+  </div>
+</section>
+
+<section id="awards">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker uk">Визнання</div><div class="kicker en">Recognition</div>
+      <h2 class="uk">Нагороди та патенти</h2><h2 class="en">Awards & Patents</h2>
+    </div>
+    <div class="awards-grid">
+      <div class="card award-card">
+        <div class="award-medal">🥇</div>
+        <h4 class="uk">1 місце — «ЛОМ», 2017</h4><h4 class="en">1st Place — LOM, 2017</h4>
+        <p class="uk">Номінація «Найоригінальніше художнє використання металобрухту», кінетична скульптура «Хвиля»</p>
+        <p class="en">"Most Original Artistic Use of Scrap Metal", kinetic sculpture "Wave"</p>
+      </div>
+      <div class="card award-card">
+        <div class="award-medal">🥉</div>
+        <h4 class="uk">3 місце — «ЛОМ», 2018</h4><h4 class="en">3rd Place — LOM, 2018</h4>
+        <p class="uk">Номінація «Найкращий твір сучасного мистецтва», скульптура «Мушля»</p>
+        <p class="en">"Best Work of Contemporary Art", sculpture "Shell"</p>
+      </div>
+      <div class="card award-card">
+        <div class="award-medal">⚙️</div>
+        <h4 class="uk">Патент</h4><h4 class="en">Patent</h4>
+        <p class="uk">Кінетична конструкція «Каскад»</p>
+        <p class="en">Kinetic construction "Kaskad"</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contacts" class="contacts">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Contacts</div>
+      <h2 class="uk">Контакти</h2><h2 class="en">Contacts</h2>
+      <p class="section-lead uk" style="color:#b7c4d1">Відкритий до співпраці, виставок і колаборацій.</p>
+      <p class="section-lead en" style="color:#b7c4d1">Open to collaborations, exhibitions and inquiries.</p>
+    </div>
+    <div class="contact-grid">
+      <a class="contact-link" href="mailto:bakminsterfuler@gmail.com">
+        <span class="contact-ico">✉️</span>
+        <span><span class="lbl">Email</span><br><span class="val">bakminsterfuler@gmail.com</span></span>
+      </a>
+      <a class="contact-link" href="tel:+380635058292">
+        <span class="contact-ico">📞</span>
+        <span><span class="lbl uk">Телефон</span><span class="lbl en">Phone</span><br><span class="val">+380 63 505 8292</span></span>
+      </a>
+      <a class="contact-link" href="https://instagram.com/mixailkashkarov" target="_blank" rel="noopener">
+        <span class="contact-ico">📷</span>
+        <span><span class="lbl">Instagram</span><br><span class="val">@mixailkashkarov</span></span>
+      </a>
+      <a class="contact-link" href="https://opensea.io/MihailKashkarov" target="_blank" rel="noopener">
+        <span class="contact-ico">🌊</span>
+        <span><span class="lbl">OpenSea</span><br><span class="val">MihailKashkarov</span></span>
+      </a>
+      <a class="contact-link" href="https://github.com/Astra31415926" target="_blank" rel="noopener">
+        <span class="contact-ico">💻</span>
+        <span><span class="lbl">GitHub</span><br><span class="val">@Astra31415926</span></span>
+      </a>
+      <a class="contact-link" href="https://www.youtube.com/@Michael-RGB-ART" target="_blank" rel="noopener">
+        <span class="contact-ico">▶️</span>
+        <span><span class="lbl">YouTube</span><br><span class="val">Michael-RGB-ART</span></span>
+      </a>
+      <a class="contact-link" href="https://t.me/MichaelKashkarov" target="_blank" rel="noopener">
+        <span class="contact-ico">✈️</span>
+        <span><span class="lbl">Telegram</span><br><span class="val">@MichaelKashkarov</span></span>
+      </a>
+      <a class="contact-link" href="https://x.com/MihailKashkarov" target="_blank" rel="noopener">
+        <span class="contact-ico">✕</span>
+        <span><span class="lbl">X / Twitter</span><br><span class="val">@MihailKashkarov</span></span>
+      </a>
+      <a class="contact-link" href="https://medium.com/@Bakminsterfuler" target="_blank" rel="noopener">
+        <span class="contact-ico">📝</span>
+        <span><span class="lbl">Medium</span><br><span class="val">@Bakminsterfuler</span></span>
+      </a>
+      <a class="contact-link" href="https://zenodo.org/records/19633526" target="_blank" rel="noopener">
+        <span class="contact-ico">📄</span>
+        <span><span class="lbl">Zenodo</span><br><span class="val uk">Наукові публікації</span><span class="val en">Research records</span></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span class="uk">© 2026 Михайло Кашкаров · Світлочутливий RGB-живопис · Модель SCI</span>
+  <span class="en">© 2026 Mykhailo Kashkarov · Light-Sensitive RGB Painting · SCI Model</span>
+</footer>
 
 <script>
-    const artworks = [
-        { title: "Анжеліна Джолі", size: "100 × 75 см", white: "angelina-white.jpg", red: "angelina-red.jpg", green: "angelina-green.jpg", blue: "angelina-blue.jpg" },
-        { title: "Термінатор", size: "120 × 85 см", white: "terminator-white.jpg", red: "terminator-red.jpg", green: "terminator-green.jpg", blue: "terminator-blue.jpg" },
-        { title: "Баскія", size: "70 × 85 см", white: "basquiat-white.jpg", red: "basquiat-red.jpg", green: "basquiat-green.jpg", blue: "basquiat-blue.jpg" },
-        { title: "Челентано", size: "100 × 75 см", white: "celentano-white.jpg", red: "celentano-red.jpg", green: "celentano-green.jpg", blue: "celentano-blue.jpg" },
-        { title: "Готична фауна", size: "80 × 60 см", white: "fauna-white.jpg", red: "fauna-red.jpg", green: "fauna-green.jpg", blue: "fauna-blue.jpg" },
-        { title: "Джамала", size: "60 × 60 см", white: "jamala-white.jpg", red: "jamala-red.jpg", green: "jamala-green.jpg", blue: "jamala-blue.jpg" },
-        { title: "Залужний", size: "60 × 60 см", white: "zaluzhnyi-white.jpg", red: "zaluzhnyi-red.jpg", green: "zaluzhnyi-green.jpg", blue: "zaluzhnyi-blue.jpg" },
-        { title: "Герст", size: "70 × 60 см", white: "hirst-white.jpg", red: "hirst-red.jpg", green: "hirst-green.jpg", blue: "hirst-blue.jpg" },
-        { title: "Джобс", size: "60 × 60 см", white: "jobs-white.jpg", red: "jobs-red.jpg", green: "jobs-green.jpg", blue: "jobs-blue.jpg" },
-        { title: "Жадан", size: "60 × 60 см", white: "zhadan-white.jpg", red: "zhadan-red.jpg", green: "zhadan-green.jpg", blue: "zhadan-blue.jpg" }
-    ];
-
-    let activeStates = {};
-    artworks.forEach((_, i) => activeStates[i] = 'white');
-
-    function setLight(idx, mode) {
-        activeStates[idx] = mode;
-        const img = document.getElementById(`art-img-${idx}`);
-        if (img) img.src = artworks[idx][mode];
-        document.querySelectorAll(`.light-btn-${idx}`).forEach(btn => {
-            if (btn.dataset.mode === mode) {
-                btn.classList.add('active');
-            } else {
-                btn.classList.remove('active');
-            }
-        });
-    }
-
-    function renderGallery() {
-        const gallery = document.getElementById('gallery');
-        if (!gallery) return;
-        gallery.innerHTML = '';
-        artworks.forEach((art, i) => {
-            const div = document.createElement('div');
-            div.className = 'art-item';
-            div.innerHTML = `
-                <img id="art-img-${i}" class="art-image" src="${art.white}" alt="${art.title}">
-                <div class="art-info">
-                    <div class="art-title">${art.title}</div>
-                    <div class="art-size">Полотно, акрил • ${art.size}</div>
-                    <div class="light-buttons">
-                        <button class="light-btn light-btn-${i} active" data-mode="white">💡 Біле</button>
-                        <button class="light-btn light-btn-${i}" data-mode="red">🔴 Червоне</button>
-                        <button class="light-btn light-btn-${i}" data-mode="green">🟢 Зелене</button>
-                        <button class="light-btn light-btn-${i}" data-mode="blue">🔵 Синє</button>
-                    </div>
-                </div>
-            `;
-            gallery.appendChild(div);
-        });
-        artworks.forEach((_, i) => {
-            document.querySelectorAll(`.light-btn-${i}`).forEach(btn => {
-                btn.addEventListener('click', () => setLight(i, btn.dataset.mode));
-            });
-        });
-    }
+  function setLang(lang){
+    document.documentElement.dataset.lang = lang;
+    document.documentElement.lang = lang;
+    document.getElementById('btn-uk').classList.toggle('active', lang==='uk');
+    document.getElementById('btn-en').classList.toggle('active', lang==='en');
+    localStorage.setItem('kashkarov-lang', lang);
+    document.title = lang==='uk'
+      ? "Михайло Кашкаров — RGB Art & SCI Model | Mykhailo Kashkarov"
+      : "Mykhailo Kashkarov — RGB Art & SCI Model | Science-Art Artist";
+    const desc = document.querySelector('meta[name="description"]');
+    desc.setAttribute('content', lang==='uk'
+      ? "Михайло Кашкаров — сайнс-арт художник з Харкова. Автор техніки світлочутливого RGB-живопису та наукової моделі SCI (Spectral Channel Integrity). Виставки, нагороди, NFT, роботи."
+      : "Mykhailo Kashkarov is a science-art artist from Kharkiv. Creator of the light-sensitive RGB painting technique and the SCI (Spectral Channel Integrity) scientific model. Exhibitions, awards, NFT, works.");
     renderGallery();
+  }
+  (function(){
+    const saved = localStorage.getItem('kashkarov-lang');
+    if(saved) setLang(saved);
+  })();
+
+  document.getElementById('burger').addEventListener('click', () => {
+    document.getElementById('mobile-menu').classList.toggle('show');
+  });
+  document.querySelectorAll('.mobile-menu a').forEach(a=>{
+    a.addEventListener('click', ()=> document.getElementById('mobile-menu').classList.remove('show'));
+  });
+
+  const artworks = [
+    { uk:"Анжеліна Джолі", en:"Angelina Jolie", size:"100 × 75 см", white:"angelina-white.jpg", red:"angelina-red.jpg", green:"angelina-green.jpg", blue:"angelina-blue.jpg" },
+    { uk:"Термінатор", en:"Terminator", size:"120 × 85 см", white:"terminator-white.jpg", red:"terminator-red.jpg", green:"terminator-green.jpg", blue:"terminator-blue.jpg" },
+    { uk:"Баскія", en:"Basquiat", size:"70 × 85 см", white:"basquiat-white.jpg", red:"basquiat-red.jpg", green:"basquiat-green.jpg", blue:"basquiat-blue.jpg" },
+    { uk:"Челентано", en:"Celentano", size:"100 × 75 см", white:"celentano-white.jpg", red:"celentano-red.jpg", green:"celentano-green.jpg", blue:"celentano-blue.jpg" },
+    { uk:"Готична фауна", en:"Gothic Fauna", size:"80 × 60 см", white:"fauna-white.jpg", red:"fauna-red.jpg", green:"fauna-green.jpg", blue:"fauna-blue.jpg" },
+    { uk:"Джамала", en:"Jamala", size:"60 × 60 см", white:"jamala-white.jpg", red:"jamala-red.jpg", green:"jamala-green.jpg", blue:"jamala-blue.jpg" },
+    { uk:"Залужний", en:"Zaluzhnyi", size:"60 × 60 см", white:"zaluzhnyi-white.jpg", red:"zaluzhnyi-red.jpg", green:"zaluzhnyi-green.jpg", blue:"zaluzhnyi-blue.jpg" },
+    { uk:"Герст", en:"Hirst", size:"70 × 60 см", white:"hirst-white.jpg", red:"hirst-red.jpg", green:"hirst-green.jpg", blue:"hirst-blue.jpg" },
+    { uk:"Джобс", en:"Jobs", size:"60 × 60 см", white:"jobs-white.jpg", red:"jobs-red.jpg", green:"jobs-green.jpg", blue:"jobs-blue.jpg" },
+    { uk:"Жадан", en:"Zhadan", size:"60 × 60 см", white:"zhadan-white.jpg", red:"zhadan-red.jpg", green:"zhadan-green.jpg", blue:"zhadan-blue.jpg" }
+  ];
+  let activeStates = {};
+  artworks.forEach((_, i) => activeStates[i] = activeStates[i] || 'white');
+
+  function setLight(idx, mode){
+    activeStates[idx] = mode;
+    const img = document.getElementById(`art-img-${idx}`);
+    if(img) img.src = artworks[idx][mode];
+    document.querySelectorAll(`.light-btn-${idx}`).forEach(btn=>{
+      btn.classList.toggle('active', btn.dataset.mode === mode);
+    });
+  }
+
+  function renderGallery(){
+    const gallery = document.getElementById('gallery');
+    if(!gallery) return;
+    const lang = document.documentElement.dataset.lang || 'uk';
+    const material = lang==='uk' ? 'Полотно, акрил' : 'Canvas, acrylic';
+    const labels = lang==='uk'
+      ? {white:'💡 Біле', red:'🔴 Червоне', green:'🟢 Зелене', blue:'🔵 Синє'}
+      : {white:'💡 White', red:'🔴 Red', green:'🟢 Green', blue:'🔵 Blue'};
+    gallery.innerHTML = '';
+    artworks.forEach((art,i)=>{
+      const mode = activeStates[i] || 'white';
+      const div = document.createElement('div');
+      div.className = 'art-item';
+      div.innerHTML = `
+        <img id="art-img-${i}" class="art-image" src="${art[mode]}" alt="${art[lang]}">
+        <div class="art-info">
+          <div class="art-title">${art[lang]}</div>
+          <div class="art-size">${material} • ${art.size}</div>
+          <div class="light-buttons">
+            <button class="light-btn light-btn-${i} ${mode==='white'?'active':''}" data-mode="white">${labels.white}</button>
+            <button class="light-btn light-btn-${i} ${mode==='red'?'active':''}" data-mode="red">${labels.red}</button>
+            <button class="light-btn light-btn-${i} ${mode==='green'?'active':''}" data-mode="green">${labels.green}</button>
+            <button class="light-btn light-btn-${i} ${mode==='blue'?'active':''}" data-mode="blue">${labels.blue}</button>
+          </div>
+        </div>`;
+      gallery.appendChild(div);
+    });
+    artworks.forEach((_,i)=>{
+      document.querySelectorAll(`.light-btn-${i}`).forEach(btn=>{
+        btn.addEventListener('click', ()=> setLight(i, btn.dataset.mode));
+      });
+    });
+  }
+  renderGallery();
 </script>
 </body>
 </html>
