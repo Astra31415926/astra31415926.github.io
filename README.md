@@ -1,3 +1,9 @@
+<!-- sci-auto-desc -->
+Михайло Кашкаров — сайнс-арт художник з Харкова. Автор техніки світлочутливого RGB-живопису та теоретичної моделі SCI (Spectral Channel Integrity). Виставки, NFT, роботи.
+
+[Live site](https://astra31415926.github.io/)
+<!-- sci-auto-desc -->
+
 # Kashkarov RGB Art Portfolio
 
 Персональний двомовний (UA/EN) сайт-портфоліо художника Михайла Кашкарова: [astra31415926.github.io](https://astra31415926.github.io/)
