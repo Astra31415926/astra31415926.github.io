@@ -1,5 +1,5 @@
 <!-- sci-auto-desc -->
-Михайло Кашкаров — сайнс-арт художник з Харкова. Автор техніки світлочутливого RGB-живопису та теоретичної моделі SCI (Spectral Channel Integrity). Виставки, NFT, роботи.
+Mikhail Kashkarov — sci-art artist and creator of the SCI (Spectral Channel Integrity) model. Portfolio: works, exhibitions, and NFTs.
 
 [Live site](https://astra31415926.github.io/)
 <!-- sci-auto-desc -->
